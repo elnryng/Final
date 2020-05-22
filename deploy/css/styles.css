@@ -611,6 +611,12 @@ textarea {
     #section-4 {
       background-position: center;
       height: 40vh; } }
+@media (min-width: 992px) {
+  #section-5 {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: ". section-5-container ."; } }
+
 @media (min-width: 1200px) {
   #section-5 {
     display: grid;
@@ -686,12 +692,34 @@ textarea {
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #odducation > aside {
         grid-area: books-tag; } }
+  @media (min-width: 768px) {
+    #section-5 #section-5-container #attraction-grid #tattoo-parlour {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-template-areas: " tattoo-words tattoo-tag"; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > h3 {
     margin: 0px; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-container #attraction-grid #tattoo-parlour > h3 {
+        grid-area: tattoo-tag;
+        z-index: 2;
+        height: 45px;
+        width: 444px;
+        text-align: left;
+        margin: 20px -300px; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > aside {
     background-image: url(../img/section-5/tattoo.jpg);
     background-position: center;
     background-size: cover;
     height: 30vh; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-container #attraction-grid #tattoo-parlour > aside {
+        grid-area: tattoo-tag; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
     padding: 70px 10px; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
+        grid-area: tattoo-words;
+        padding: 80px 10px 70px;
+        font-size: 1.3125rem;
+        line-height: 1.625rem; } }

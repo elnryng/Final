@@ -2,6 +2,12 @@
 
 #section-5{
 
+    @include lg{
+        display:grid;
+        grid-template-columns: 50px auto 50px;
+        grid-template-areas: ". section-5-container ."
+    }
+
     @include xl{
         
         display:grid;
@@ -117,19 +123,49 @@
             }
 
             #tattoo-parlour{
+
+                @include md{
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    grid-template-areas: " tattoo-words tattoo-tag";
+                }
+
                 >h3{
                     margin: 0px;
+
+                    @include md{
+                        grid-area: tattoo-tag;
+                        z-index: 2;
+                        height: 45px;
+                        width: 444px;
+                        text-align: left;
+                        margin: 20px -300px;
+                    }
                 }
+
+                
 
                 >aside{
                     background-image: url(../img/section-5/tattoo.jpg);
                     background-position: center;
                     background-size: cover;
                     height: 30vh;
+
+                    @include md{
+                        grid-area: tattoo-tag;
+                        
+                    }
                 }
 
                 >p{
                     padding: 70px 10px;
+
+                    @include md{
+                        grid-area: tattoo-words;
+                        padding: 80px 10px 70px;
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(26);
+                    }
                 }
             }
         }
