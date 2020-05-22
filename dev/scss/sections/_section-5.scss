@@ -1,0 +1,139 @@
+//section 5
+
+#section-5{
+
+    @include xl{
+        
+        display:grid;
+        grid-template-columns: auto 1004px auto;
+        grid-template-areas: ". section-5-container ."
+    }
+
+    #section-5-container{
+        grid-area: section-5-container;
+
+        >h2{
+            text-align: center;
+            align-content: center;
+
+            @include lg{
+                margin-top: 120px;
+            }
+        }
+
+        #attraction-grid{
+
+            #flea-market{
+                margin-bottom: 92px;
+
+                @include md{
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    grid-template-areas: " doll-words doll-tag";
+                }
+
+                >h3{
+
+                    @include md{
+                        grid-area: doll-tag;
+                        z-index: 2;
+                        height: 45px;
+                        width: 444px;
+                        text-align: left;
+                        margin: 20px -300px;
+                    }
+
+                }
+                
+
+                >p{
+                    padding: 70px 10px;
+
+                    @include md{
+                        grid-area: doll-words;
+                        padding: 80px 10px 70px;
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(26);
+                    }
+                }
+
+                >aside{
+                    background-image: url(../img/section-5/doll.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 30vh;
+
+                    @include md{
+                        grid-area: doll-tag;
+                        
+                    }
+                }
+            }
+
+            #odducation{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    grid-template-areas: " books-tag books-words";
+                    margin-bottom: 92px;
+                }
+
+                >p{
+                    padding: 70px 10px;
+
+                    @include md{
+                        grid-area: books-words;
+                        padding: 80px 10px 70px;
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(26);
+                    }
+                }
+
+                >h3{
+
+                    @include md{
+                        grid-area: books-tag;
+                        z-index: 2;
+                        height: 45px;
+                        width: 444px;
+                        text-align: right;
+                        margin: 20px 100px;
+                    }
+
+                }
+
+                >aside{
+                    background-image: url(../img/section-5/books.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 30vh;
+
+                    @include md{
+                        grid-area: books-tag;
+                        
+                    }
+                }                
+
+            }
+
+            #tattoo-parlour{
+                >h3{
+                    margin: 0px;
+                }
+
+                >aside{
+                    background-image: url(../img/section-5/tattoo.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 30vh;
+                }
+
+                >p{
+                    padding: 70px 10px;
+                }
+            }
+        }
+        
+
+    }
+}

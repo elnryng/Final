@@ -1,0 +1,14 @@
+//section 4
+
+#section-4{
+    background-image: url(../img/section-4/neon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    margin-top: 120px;
+
+    @include lg{
+        background-position: center;
+        height: 40vh;
+    }
+}
