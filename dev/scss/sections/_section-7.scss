@@ -1,1 +1,11 @@
 //section 7
+
+#section-7{
+    background-color: $green;
+    color: $white;
+
+    >h2{
+        padding-top: 22px;
+        text-align: center;
+    }
+}
