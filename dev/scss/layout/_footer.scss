@@ -10,6 +10,14 @@ footer{
     "logos info info buttons"
     "logos info info buttons";
 
+    @include xl{
+    grid-template-columns:  auto 15% 1fr 1fr 1fr 20%;
+    grid-template-areas: 
+    "logos . eye-name eye-name eye-name ."
+    "logos . info info buttons ."
+    "logos . info info buttons .";
+    }
+
 
 
     #logos{
@@ -40,6 +48,12 @@ footer{
             grid-template-columns: 15% 30% 10% auto;
         }
 
+        @include lg{
+            grid-template-columns: 20% 30% 10% auto;
+            padding-top: 30px;
+            margin-left: 70px;
+        }
+
 
         >div{
             grid-area: eye;
@@ -59,6 +73,10 @@ footer{
                 font-size: rem-calc(25);
 
             }
+
+            @include lg{
+                font-size: rem-calc(40);
+            }
             
         }
 
@@ -70,6 +88,10 @@ footer{
 
             @include md{
                 font-size: rem-calc(20);
+            }
+
+            @include lg{
+                font-size: rem-calc(30);
             }
         }
 
@@ -88,6 +110,12 @@ footer{
                 font-size: rem-calc(20);
                 margin-top: 20px;
             }
+
+            @include lg{
+                font-size: rem-calc(26);
+                margin-top: 30px;
+                margin-left: 50px;
+            }
         }
 
         >p{
@@ -98,6 +126,11 @@ footer{
 
             @include md{
                 font-size: rem-calc(18);
+            }
+
+            @include lg{
+                font-size: rem-calc(22);
+                margin-left: 50px;
             }
         }
     }
