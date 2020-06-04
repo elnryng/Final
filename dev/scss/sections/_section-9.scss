@@ -1,1 +1,131 @@
 //section 9
+
+#section-9 {
+
+    margin-bottom: 100px;
+   
+
+    #border {
+        >h2 {
+            text-align: center;
+            margin: 80px 0px;
+
+            @include md {
+                padding: 188px 0px 0px;
+                margin-bottom: 20px;
+
+            }
+
+            @include md{
+                padding: 0px 0px 0px;
+                
+                padding-top: 160px;
+                
+            }
+
+        }
+
+        @include md {
+            background-image: url(../img/section-9/tabletborder.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+
+        }
+
+        @include lg{
+            background-image: url(../img/section-9/desktopborder.svg);
+            background-size: 97%;
+            background-position: center;
+            height: 1800px;
+            
+        }
+
+        @include xl{
+            background-size: 85%;
+            height: 2390px;
+        }
+
+    }
+
+#section-9-container{
+@include lg{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: ". section-9 .";
+    padding-top: 120px;
+    padding-bottom: 50px;
+    
+}
+
+@include xl{
+    grid-template-columns: 15% auto 15%;
+    padding-top: 215px;
+}
+
+    #ticket-image {
+        background-image: url(../img/section-9/smoke.jpg);
+        background-position: center;
+        background-size: cover;
+
+
+        @include md{
+            display: grid;
+            grid-template-columns: 100px auto auto auto 100px;
+            grid-template-rows: 4;
+            grid-template-areas: 
+            ". genad genad . ."
+            ". . taxiwork taxiwork ."
+            ". insect insect . ."
+            ". . owl owl .";
+            
+        }
+
+        @include lg{
+            grid-area: section-9;
+            
+        }
+
+        @include xl{
+            grid-template-columns: 20px auto auto auto 20px;
+        }
+
+        #general {
+            padding-top: 30px;
+            @include md{
+                grid-area: genad;
+                margin-bottom: 60px;
+            }
+
+            @include lg{
+                padding-top: 100px;
+            }
+
+        }
+
+        #taxidermy {
+            @include md{
+                grid-area: taxiwork;
+                margin-bottom: 60px;
+            }
+        }
+
+        #insect {
+
+            @include md{
+                grid-area: insect;
+                margin-bottom: 60px;
+            }
+        }
+
+        #owlpellet {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+
+            @include md{
+                grid-area: owl;
+            }
+        }
+    }
+}
+}

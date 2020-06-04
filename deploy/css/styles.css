@@ -317,6 +317,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 .hide-for-mobile-and-tab {
   display: none; }
   @media (min-width: 992px) {
@@ -430,6 +435,54 @@ template {
         grid-area: more;
         margin-right: 0px;
         margin-left: 10px; } }
+.ticket-label {
+  text-align: center;
+  background-color: #d9aa08;
+  border-radius: 8px;
+  font-size: 1.4375rem;
+  margin: 30px 14px;
+  padding: 10px 5px; }
+  @media (min-width: 768px) {
+    .ticket-label {
+      color: #fff;
+      background-color: #560101;
+      white-space: nowrap;
+      length: inherit; } }
+.ticket-text {
+  color: #d9aa08;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0px 10px 50px; }
+  @media (min-width: 1200px) {
+    .ticket-text {
+      font-size: 1.625rem;
+      line-height: 1.75rem; } }
+.ticket-price {
+  text-align: center;
+  color: #d9aa08;
+  font-size: 1.625rem;
+  margin: 20px 0px 15px; }
+  @media (min-width: 768px) {
+    .ticket-price {
+      margin: auto; } }
+@media (min-width: 768px) {
+  .ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "tag tag tag tag price" "desc desc desc desc desc"; }
+    .ticket-grid > h3 {
+      grid-area: tag;
+      margin: 0px 0px 20px 0px; }
+    .ticket-grid p:first-child {
+      grid-area: price;
+      text-align: center; }
+    .ticket-grid :last-child {
+      grid-area: desc; } }
+
+@media (min-width: 1200px) {
+  .ticket-grid {
+    margin-bottom: 125px !important; } }
+
 /* =============
     Typography
 ============= */
@@ -458,6 +511,31 @@ h2 {
   font-style: italic;
   border-radius: 2px; }
 
+.footer-button {
+  background-color: #d9aa08;
+  border-radius: 2px;
+  color: #000;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0px 0px;
+  width: 120px;
+  height: 22px;
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    .footer-button {
+      width: 150px;
+      font-size: 1.25rem;
+      padding: 15px 0px 15px; } }
+  @media (min-width: 992px) {
+    .footer-button {
+      padding: 20px 0px 0px;
+      width: 203px;
+      height: 58px;
+      font-size: 1.5625rem; } }
+  .footer-button > p {
+    padding: 0px;
+    margin: 0px; }
+
 /* =============
     Forms
 ============= */
@@ -482,6 +560,83 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #8E0e0e;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-areas: "logos eye-name eye-name eye-name" "logos info info buttons" "logos info info buttons"; }
+  footer #logos {
+    grid-area: logos;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffbcf;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0px;
+    font-size: 1.5625rem;
+    margin: -100px 15px 15px; }
+    @media (min-width: 768px) {
+      footer #logos {
+        margin: -100px 50px 15px 15px; } }
+  footer #eye-logo {
+    grid-area: eye-name;
+    display: grid;
+    grid-template-columns: 25% 30% 10% auto;
+    grid-template-areas: "eye name name name" "eye tagline tagline ."; }
+    @media (min-width: 768px) {
+      footer #eye-logo {
+        grid-template-columns: 15% 30% 10% auto; } }
+    footer #eye-logo > div {
+      grid-area: eye;
+      background-image: url(../img/section-1/eye.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    footer #eye-logo > h3 {
+      grid-area: name;
+      margin-top: 40px;
+      margin-bottom: 0px;
+      color: #fff; }
+      @media (min-width: 768px) {
+        footer #eye-logo > h3 {
+          font-size: 1.5625rem; } }
+    footer #eye-logo > p {
+      grid-area: tagline;
+      font-style: italic;
+      margin-top: 5px;
+      color: #fff; }
+      @media (min-width: 768px) {
+        footer #eye-logo > p {
+          font-size: 1.25rem; } }
+  footer #info {
+    grid-area: info; }
+    footer #info h4 {
+      font-family: 'New Rocker', cursive;
+      margin: auto 0px 0px 0px;
+      font-size: 0.875rem;
+      color: #fff; }
+      @media (min-width: 768px) {
+        footer #info h4 {
+          font-size: 1.25rem;
+          margin-top: 20px; } }
+    footer #info > p {
+      font-size: 0.875rem;
+      color: #fff;
+      margin-top: 4px;
+      font-style: italic; }
+      @media (min-width: 768px) {
+        footer #info > p {
+          font-size: 1.125rem; } }
+  footer #buttons {
+    grid-area: buttons; }
+    footer #buttons > div {
+      margin-right: 15px; }
+    footer #buttons :first-child {
+      margin-bottom: 20px; }
+      @media (min-width: 768px) {
+        footer #buttons :first-child {
+          margin-bottom: 30px; } }
 #section-1 {
   display: grid;
   height: 70vh;
@@ -845,8 +1000,11 @@ textarea {
   margin-top: 120px; }
   @media (min-width: 992px) {
     #section-6 {
-      background-position: 0px -450px;
+      background-position: 0px -250px;
       height: 40vh; } }
+  @media (min-width: 1200px) {
+    #section-6 {
+      background-position: 0px -450px; } }
 #section-7 {
   background-color: #646b07;
   color: #fff; }
@@ -1098,3 +1256,81 @@ textarea {
     #section-8 {
       background-position: 0px -250px;
       height: 40vh; } }
+#section-9 {
+  margin-bottom: 100px; }
+  #section-9 #border > h2 {
+    text-align: center;
+    margin: 80px 0px; }
+    @media (min-width: 768px) {
+      #section-9 #border > h2 {
+        padding: 188px 0px 0px;
+        margin-bottom: 20px; } }
+    @media (min-width: 768px) {
+      #section-9 #border > h2 {
+        padding: 0px 0px 0px;
+        padding-top: 160px; } }
+  @media (min-width: 768px) {
+    #section-9 #border {
+      background-image: url(../img/section-9/tabletborder.svg);
+      background-size: cover;
+      background-repeat: no-repeat; } }
+  @media (min-width: 992px) {
+    #section-9 #border {
+      background-image: url(../img/section-9/desktopborder.svg);
+      background-size: 97%;
+      background-position: center;
+      height: 1800px; } }
+  @media (min-width: 1200px) {
+    #section-9 #border {
+      background-size: 85%;
+      height: 2390px; } }
+  @media (min-width: 992px) {
+    #section-9 #section-9-container {
+      display: grid;
+      grid-template-columns: 10% auto 10%;
+      grid-template-areas: ". section-9 .";
+      padding-top: 120px;
+      padding-bottom: 50px; } }
+  @media (min-width: 1200px) {
+    #section-9 #section-9-container {
+      grid-template-columns: 15% auto 15%;
+      padding-top: 215px; } }
+  #section-9 #section-9-container #ticket-image {
+    background-image: url(../img/section-9/smoke.jpg);
+    background-position: center;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #section-9 #section-9-container #ticket-image {
+        display: grid;
+        grid-template-columns: 100px auto auto auto 100px;
+        grid-template-rows: 4;
+        grid-template-areas: ". genad genad . ." ". . taxiwork taxiwork ." ". insect insect . ." ". . owl owl ."; } }
+    @media (min-width: 992px) {
+      #section-9 #section-9-container #ticket-image {
+        grid-area: section-9; } }
+    @media (min-width: 1200px) {
+      #section-9 #section-9-container #ticket-image {
+        grid-template-columns: 20px auto auto auto 20px; } }
+    #section-9 #section-9-container #ticket-image #general {
+      padding-top: 30px; }
+      @media (min-width: 768px) {
+        #section-9 #section-9-container #ticket-image #general {
+          grid-area: genad;
+          margin-bottom: 60px; } }
+      @media (min-width: 992px) {
+        #section-9 #section-9-container #ticket-image #general {
+          padding-top: 100px; } }
+    @media (min-width: 768px) {
+      #section-9 #section-9-container #ticket-image #taxidermy {
+        grid-area: taxiwork;
+        margin-bottom: 60px; } }
+    @media (min-width: 768px) {
+      #section-9 #section-9-container #ticket-image #insect {
+        grid-area: insect;
+        margin-bottom: 60px; } }
+    #section-9 #section-9-container #ticket-image #owlpellet {
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+      @media (min-width: 768px) {
+        #section-9 #section-9-container #ticket-image #owlpellet {
+          grid-area: owl; } }
