@@ -1,5 +1,5 @@
 //section 8
-#section-8{
+#section-8 {
     background-image: url(../img/section-8/hero4.jpg);
     background-size: cover;
     background-position: 0px -200px;
@@ -7,7 +7,7 @@
     height: 30vh;
     margin-top: 0px;
 
-    @include xl{
+    @include xl {
         background-position: 0px -250px;
         height: 40vh;
     }

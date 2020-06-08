@@ -1,29 +1,27 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     background-color: $red;
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr;
-    grid-template-areas: 
-    "logos eye-name eye-name eye-name"
-    "logos info info buttons"
-    "logos info info buttons";
+    grid-template-areas:
+        "logos eye-name eye-name eye-name"
+        "logos info info buttons"
+        "logos info info buttons";
 
-    @include xl{
-    grid-template-columns:  auto 15% 1fr 1fr 1fr 20%;
-    grid-template-areas: 
-    "logos . eye-name eye-name eye-name ."
-    "logos . info info buttons ."
-    "logos . info info buttons .";
+    @include xl {
+        grid-template-columns: auto 15% 1fr 1fr 1fr 20%;
+        grid-template-areas:
+            "logos . eye-name eye-name eye-name ."
+            "logos . info info buttons ."
+            "logos . info info buttons .";
     }
 
-
-
-    #logos{
+    #logos {
         grid-area: logos;
         width: 35px;
-        display:flex;
+        display: flex;
         flex-direction: column;
         background-color: $cream;
         justify-content: space-between;
@@ -32,30 +30,31 @@ footer{
         font-size: rem-calc(25);
         margin: -100px 15px 15px;
 
-        @include md{
+        @include md {
             margin: -100px 50px 15px 15px;
         }
     }
 
-    #eye-logo{
+    #eye-logo {
         grid-area: eye-name;
         display: grid;
         grid-template-columns: 25% 30% 10% auto;
-        grid-template-areas: 
-        "eye name name name"
-        "eye tagline tagline .";
-        @include md{
+        grid-template-areas:
+            "eye name name name"
+            "eye tagline tagline .";
+
+        @include md {
             grid-template-columns: 15% 30% 10% auto;
         }
 
-        @include lg{
+        @include lg {
             grid-template-columns: 20% 30% 10% auto;
             padding-top: 30px;
             margin-left: 70px;
         }
 
 
-        >div{
+        >div {
             grid-area: eye;
             background-image: url(../img/section-1/eye.png);
             background-position: center;
@@ -63,92 +62,92 @@ footer{
             background-size: 100%;
         }
 
-        >h3{
+        >h3 {
             grid-area: name;
             margin-top: 40px;
             margin-bottom: 0px;
             color: $white;
 
-            @include md{
+            @include md {
                 font-size: rem-calc(25);
 
             }
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(40);
             }
-            
+
         }
 
-        >p{
+        >p {
             grid-area: tagline;
             font-style: italic;
             margin-top: 5px;
             color: $white;
 
-            @include md{
+            @include md {
                 font-size: rem-calc(20);
             }
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(30);
             }
         }
 
     }
 
-    #info{
+    #info {
         grid-area: info;
 
-        h4{
+        h4 {
             font-family: 'New Rocker', cursive;
             margin: auto 0px 0px 0px;
             font-size: rem-calc(14);
-            color:$white;
+            color: $white;
 
-            @include md{
+            @include md {
                 font-size: rem-calc(20);
                 margin-top: 20px;
             }
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(26);
                 margin-top: 30px;
                 margin-left: 50px;
             }
         }
 
-        >p{
+        >p {
             font-size: rem-calc(14);
             color: $white;
             margin-top: 4px;
             font-style: italic;
 
-            @include md{
+            @include md {
                 font-size: rem-calc(18);
             }
 
-            @include lg{
+            @include lg {
                 font-size: rem-calc(22);
                 margin-left: 50px;
             }
         }
     }
 
-    #buttons{
+    #buttons {
         grid-area: buttons;
 
-        >div{
+        >div {
             margin-right: 15px;
         }
 
-        :first-child{
+        :first-child {
             margin-bottom: 20px;
-            @include md{
+
+            @include md {
                 margin-bottom: 30px;
             }
         }
-        
+
     }
 }
-    

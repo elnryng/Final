@@ -1,11 +1,19 @@
 /* =============
     Base
 ============= */
-ul{
+ul {
     padding: 0;
 
-    li{
+    li {
         list-style: none;
+    }
+}
+
+.mobile-only {
+    display: block !important;
+
+    @include md {
+        display: none !important
     }
 }
 
@@ -19,7 +27,7 @@ ul{
 }
 
 .hide-for-mobile {
-    display: none;
+    display: none !important;
 
     @include md {
         display: block !important;
@@ -54,7 +62,7 @@ ul{
 
 .mobile-charity.tablet-charity-left {
 
-    
+
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -83,7 +91,7 @@ ul{
 
     @include md {
         margin-top: 84px;
-        display:  grid;
+        display: grid;
         grid-template-columns: 35% 45% 20%;
 
         >h3 {
@@ -109,9 +117,9 @@ ul{
 
         >aside {
 
-            width:  100%;
-            height:  35vh;
-            background-position:  -130px 0px;
+            width: 100%;
+            height: 35vh;
+            background-position: -130px 0px;
 
         }
 
@@ -158,7 +166,7 @@ ul{
         display: grid;
         grid-template-columns: 20% 45% 35%;
 
-        >h3{
+        >h3 {
             height: 39px;
             width: 500px;
             font-size: rem-calc(32);
@@ -168,7 +176,7 @@ ul{
             margin-left: -310px;
         }
 
-        >article{
+        >article {
             margin-top: 20%;
             margin-left: 20px;
             margin-right: 20px;
@@ -176,22 +184,22 @@ ul{
             line-height: rem-calc(24);
         }
 
-        >aside{
+        >aside {
             width: 100%;
             height: 35vh;
             background-position: center;
         }
 
-        >div{
+        >div {
             grid-area: more;
             margin-right: 0px;
             margin-left: 10px;
         }
-}
+    }
 
 }
 
-.ticket-label{
+.ticket-label {
     text-align: center;
     background-color: $gold;
     border-radius: 8px;
@@ -199,62 +207,62 @@ ul{
     margin: 30px 14px;
     padding: 10px 5px;
 
-    @include md{
+    @include md {
         color: $white;
+        font-size: rem-calc(20);
         background-color: $burgundy;
         white-space: nowrap;
         length: inherit;
-       
-        
     }
 }
 
-.ticket-text{
+.ticket-text {
     color: $gold;
     font-size: rem-calc(16);
     line-height: rem-calc(20);
     margin: 0px 10px 50px;
-    @include xl{
+
+    @include xl {
         font-size: rem-calc(26);
         line-height: rem-calc(28);
     }
 }
 
-.ticket-price{
+.ticket-price {
     text-align: center;
     color: $gold;
     font-size: rem-calc(26);
     margin: 20px 0px 15px;
 
-    @include md{
-        margin:auto;
+    @include md {
+        margin: auto;
     }
 }
 
-.ticket-grid{
-    @include md{
+.ticket-grid {
+    @include md {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-areas: 
-        "tag tag tag tag price"
-        "desc desc desc desc desc";
+        grid-template-areas:
+            "tag tag tag tag price"
+            "desc desc desc desc desc";
 
-        >h3{
+        >h3 {
             grid-area: tag;
             margin: 0px 0px 20px 0px;
         }
 
-        p:first-child{
+        p:first-child {
             grid-area: price;
             text-align: center;
         }
 
-        :last-child{
+        :last-child {
             grid-area: desc;
         }
     }
 
-    @include xl{
+    @include xl {
         margin-bottom: 125px !important;
     }
 

@@ -1,12 +1,12 @@
 //section 2
 
-#section-2{
+#section-2 {
     background-image: url(../img/section-2/hero1.jpg);
     background-size: cover;
     background-position: 0px 600px;
     height: 30vh;
 
-    @include lg{
+    @include lg {
         background-position: 0px 600px;
         height: 40vh;
     }

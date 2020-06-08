@@ -2,7 +2,7 @@
     Buttons
 ============= */
 
-.more{
+.more {
     background-color: $gold;
     width: 96px;
     height: 33px;
@@ -13,7 +13,7 @@
     border-radius: 2px;
 }
 
-.footer-button{
+.footer-button {
     background-color: $gold;
     border-radius: 2px;
     color: $black;
@@ -24,19 +24,20 @@
     height: 22px;
     font-size: rem-calc(18);
 
-    @include md{
+    @include md {
         width: 150px;
         font-size: rem-calc(20);
         padding: 15px 0px 15px;
     }
-        @include lg{
-            padding: 10px 0px 0px;
-            width: 203px;
-            height: 40px;
-            font-size: rem-calc(25);
-        }
-    
-    >p{
+
+    @include lg {
+        padding: 10px 0px 0px;
+        width: 203px;
+        height: 40px;
+        font-size: rem-calc(25);
+    }
+
+    >p {
         padding: 0px;
         margin: 0px;
     }

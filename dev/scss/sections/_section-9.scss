@@ -1,131 +1,139 @@
-//section 9
-
 #section-9 {
-
-    margin-bottom: 100px;
-   
-
-    #border {
-        >h2 {
-            text-align: center;
-            margin: 80px 0px;
-
-            @include md {
-                padding: 188px 0px 0px;
-                margin-bottom: 20px;
-
-            }
-
-            @include md{
-                padding: 0px 0px 0px;
-                
-                padding-top: 160px;
-                
-            }
-
-        }
-
-        @include md {
-            background-image: url(../img/section-9/tabletborder.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            
-
-        }
-
-        @include lg{
-            background-image: url(../img/section-9/desktopborder.svg);
-            background-size: 97%;
-            background-position: center;
-            height: 1800px;
-            
-        }
-
-        @include xl{
-            background-size: 85%;
-            height: 2390px;
-        }
-
-    }
-
-#section-9-container{
-@include lg{
     display: grid;
-    grid-template-columns: 10% auto 10%;
     grid-template-areas: ". section-9 .";
-    padding-top: 120px;
-    padding-bottom: 50px;
-    
-}
+    grid-template-columns: 15px auto 15px;
+    padding-bottom: 80px;
 
-@include xl{
-    grid-template-columns: 15% auto 15%;
-    padding-top: 215px;
-}
+    @include md {
+        padding-bottom: 100px;
+    }
 
-    #ticket-image {
-        background-image: url(../img/section-9/smoke.jpg);
-        background-position: center;
-        background-size: cover;
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
 
+    >div {
+        grid-area: section-9;
 
-        @include md{
-            display: grid;
-            grid-template-columns: 100px auto auto auto 100px;
-            grid-template-rows: 4;
-            grid-template-areas: 
-            ". genad genad . ."
-            ". . taxiwork taxiwork ."
-            ". insect insect . ."
-            ". . owl owl .";
-            
-        }
+        #border-top {
+            position: relative;
 
-        @include lg{
-            grid-area: section-9;
-            
-        }
+            h2 {
+                bottom: 0;
+                font-size: rem-calc(25);
+                left: 0;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                top: 50%;
 
-        @include xl{
-            grid-template-columns: 20px auto auto auto 20px;
-        }
+                @include md {
+                    font-size: rem-calc(35);
+                }
 
-        #general {
-            padding-top: 30px;
-            @include md{
-                grid-area: genad;
-                margin-bottom: 60px;
+                @include xl {
+                    font-size: rem-calc(45);
+                }
             }
 
-            @include lg{
-                padding-top: 100px;
+            picture {
+                object-fit: cover;
             }
 
-        }
-
-        #taxidermy {
-            @include md{
-                grid-area: taxiwork;
-                margin-bottom: 60px;
+            img {
+                width: 100%;
             }
         }
 
-        #insect {
+        #border-middle {
+            background-image: url("../img/section-9/border-middle.svg");
+            background-size: contain;
+            margin-top: -5px;
+            min-height: 70vh;
 
-            @include md{
-                grid-area: insect;
-                margin-bottom: 60px;
+            #content-container {
+                min-height: 70vh;
+                padding: 5%;
+
+                #content-goes-here {
+                    background-image: url(../img/section-9/smoke.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    margin: 0 5%;
+                    min-height: 70vh;
+
+                    @include md {
+                        display: grid;
+                        grid-template-columns: 80px auto auto auto auto 80px;
+                        grid-template-rows: 4;
+                        grid-template-areas:
+                            ". genad genad . . ."
+                            ". . taxiwork taxiwork taxiwork ."
+                            ". insect insect . . ."
+                            ". . owl owl owl .";
+
+                    }
+
+                    @include lg {
+                        grid-area: section-9;
+
+                    }
+
+                    @include xl {
+                        grid-template-columns: 20px auto auto auto 20px;
+                    }
+
+                    #general {
+                        padding-top: 30px;
+
+                        @include md {
+                            grid-area: genad;
+                            margin-bottom: 60px;
+                        }
+
+                        @include lg {
+                            padding-top: 100px;
+                        }
+
+                    }
+
+                    #taxidermy {
+                        @include md {
+                            grid-area: taxiwork;
+                            margin-bottom: 60px;
+                        }
+                    }
+
+                    #insect {
+
+                        @include md {
+                            grid-area: insect;
+                            margin-bottom: 60px;
+                        }
+                    }
+
+                    #owlpellet {
+                        padding-bottom: 30px;
+                        margin-bottom: 30px;
+
+                        @include md {
+                            grid-area: owl;
+
+
+                        }
+                    }
+                }
             }
         }
 
-        #owlpellet {
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+        #border-bottom {
+            picture {
+                object-fit: cover;
+            }
 
-            @include md{
-                grid-area: owl;
+            img {
+                width: 100%;
             }
         }
     }
-}
 }

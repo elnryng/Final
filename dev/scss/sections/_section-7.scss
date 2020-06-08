@@ -3,6 +3,7 @@
 #section-7 {
     background-color: $green;
     color: $white;
+    margin-bottom: 50px;
 
     @include lg {
         margin-top: 0px;
@@ -31,7 +32,7 @@
                 margin: 0px 105px;
             }
 
-            @include xl{
+            @include xl {
                 margin: 0px 20%;
             }
         }
@@ -235,26 +236,26 @@
                     font-size: rem-calc(28);
                     line-height: rem-calc(30);
 
-                    @include lg{
+                    @include lg {
                         font-size: rem-calc(32);
                         line-height: rem-calc(34);
                     }
 
-                    @include xl{
+                    @include xl {
                         margin-left: 30%;
                         margin-top: 0px;
                     }
                 }
             }
 
-            @include xl{
-                
-                    grid-template-columns: 65% 35%;
-                    grid-template-areas:
-                        "words skulltag"
-                        "more skulltag"
-                        "quote skulltag";
-        
+            @include xl {
+
+                grid-template-columns: 65% 35%;
+                grid-template-areas:
+                    "words skulltag"
+                    "more skulltag"
+                    "quote skulltag";
+
             }
 
             >h3 {
@@ -282,11 +283,11 @@
                     margin-bottom: 30%;
                 }
 
-                @include lg{
+                @include lg {
                     margin-bottom: 50%;
                 }
 
-                @include xl{
+                @include xl {
                     margin-left: 50%;
                     margin-bottom: 0px;
                     padding-top: 100px;
@@ -303,7 +304,7 @@
                     height: 50vh;
                 }
 
-                @include xl{
+                @include xl {
                     height: 80vh;
                 }
             }
@@ -319,7 +320,7 @@
                     margin-right: 10px;
                 }
 
-                @include xl{
+                @include xl {
                     justify-content: flex-end;
                     align-items: flex-end;
                     margin-right: 30px;
@@ -328,7 +329,7 @@
         }
 
         #als {
-            
+
             @include md {
 
                 grid-template-areas:
@@ -337,7 +338,7 @@
                     ". . more";
             }
 
-            @include lg{ 
+            @include lg {
                 padding-bottom: 84px;
             }
 
