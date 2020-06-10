@@ -1,153 +1,200 @@
 //section 5
 
 #section-5 {
-	@include lg {
-		display: grid;
-		grid-template-columns: 50px auto 50px;
-	}
-	@include xl {
-		display: grid;
-		grid-template-columns: auto 1004px auto;
-	}
-	#section-5-container {
-		grid-area: section-5-container;
-		>h2 {
-			align-content: center;
-			text-align: center;
-			@include md {
-				margin-top: 80px;
-			}
-			@include lg {
-				margin-top: 30px;
-			}
-		}
-		#attraction-grid {
-			#flea-market {
-				margin-bottom: 50px;
-				@include md {
-					display: grid;
-					grid-template-areas: " doll-words doll-tag";
-					grid-template-columns: 60% 40%;
-				}
-				>h3 {
-					@include md {
-						grid-area: doll-tag;
-						height: 45px;
-						margin: 20px -300px;
-						text-align: left;
-						width: 444px;
-						z-index: 2;
-					}
-				}
-				>p {
-					font-size: rem-calc(18);
-					line-height: rem-calc(22);
-					padding: 30px 10px;
-					@include md {
-						font-size: rem-calc(21);
-						grid-area: doll-words;
-						line-height: rem-calc(26);
-						padding: 80px 10px 70px;
-					}
-					@include lg {
-						font-size: rem-calc(24);
-						line-height: rem-calc(28);
-					}
-				}
-				>aside {
-					background-image: url(../img/section-5/doll.jpg);
-					background-position: center;
-					background-size: cover;
-					height: 30vh;
-					@include md {
-						grid-area: doll-tag;
-					}
-				}
-			}
-			#odducation {
-				@include md {
-					display: grid;
-					grid-template-areas: " books-tag books-words";
-					grid-template-columns: 40% 60%;
-					margin-bottom: 92px;
-				}
-				>p {
-					font-size: rem-calc(18);
-					line-height: rem-calc(22);
-					padding: 35px 10px;
-					@include md {
-						font-size: rem-calc(21);
-						grid-area: books-words;
-						line-height: rem-calc(26);
-						padding: 80px 10px 70px;
-					}
-					@include lg {
-						font-size: rem-calc(24);
-						line-height: rem-calc(28);
-					}
-				}
-				>h3 {
-					@include md {
-						grid-area: books-tag;
-						height: 45px;
-						margin: 20px 100px;
-						text-align: right;
-						width: 444px;
-						z-index: 2;
-					}
-				}
-				>aside {
-					background-image: url(../img/section-5/books.jpg);
-					background-position: center;
-					background-size: cover;
-					height: 30vh;
-					@include md {
-						grid-area: books-tag;
-					}
-				}
-			}
-			#tattoo-parlour {
-				@include md {
-					display: grid;
-					grid-template-areas: " tattoo-words tattoo-tag";
-					grid-template-columns: 60% 40%;
-				}
-				>h3 {
-					margin: 0px;
-					@include md {
-						grid-area: tattoo-tag;
-						height: 45px;
-						margin: 20px -300px;
-						text-align: left;
-						width: 444px;
-						z-index: 2;
-					}
-				}
-				>aside {
-					background-image: url(../img/section-5/tattoo.jpg);
-					background-position: center;
-					background-size: cover;
-					height: 30vh;
-					@include md {
-						grid-area: tattoo-tag;
-					}
-				}
-				>p {
-					font-size: rem-calc(18);
-					line-height: rem-calc(22);
-					padding: 50px 10px;
-					@include md {
-						font-size: rem-calc(21);
-						grid-area: tattoo-words;
-						line-height: rem-calc(26);
-						padding: 80px 10px 70px;
-					}
-					@include lg {
-						font-size: rem-calc(24);
-						line-height: rem-calc(28);
-					}
-				}
-			}
-		}
-	}
+
+    @include lg {
+        display: grid;
+        grid-template-columns: 50px auto 50px;
+        grid-template-areas: ". section-5-container ."
+    }
+
+    @include xl {
+
+        display: grid;
+        grid-template-columns: auto 1004px auto;
+        grid-template-areas: ". section-5-container ."
+    }
+
+    #section-5-container {
+        grid-area: section-5-container;
+
+        >h2 {
+            text-align: center;
+            align-content: center;
+
+            @include md{
+                margin-top: 80px;
+            }
+
+            @include lg {
+                margin-top: 30px;
+            }
+        }
+
+        #attraction-grid {
+
+            #flea-market {
+                margin-bottom: 50px;
+
+                @include md {
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    grid-template-areas: " doll-words doll-tag";
+                }
+
+                >h3 {
+
+                    @include md {
+                        grid-area: doll-tag;
+                        z-index: 2;
+                        height: 45px;
+                        width: 444px;
+                        text-align: left;
+                        margin: 20px -300px;
+                    }
+
+                }
+
+
+                >p {
+                    padding: 30px 10px;
+                    font-size: rem-calc(18);
+                    line-height: rem-calc(22);
+
+                    @include md {
+                        grid-area: doll-words;
+                        padding: 80px 10px 70px;
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(26);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(24);
+                        line-height: rem-calc(28);
+                    }
+                }
+
+                >aside {
+                    background-image: url(../img/section-5/doll.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 30vh;
+
+                    @include md {
+                        grid-area: doll-tag;
+
+                    }
+                }
+            }
+
+            #odducation {
+                @include md {
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    grid-template-areas: " books-tag books-words";
+                    margin-bottom: 92px;
+                }
+
+                >p {
+                    padding: 35px 10px;
+                    font-size: rem-calc(18);
+                    line-height: rem-calc(22);
+
+                    @include md {
+                        grid-area: books-words;
+                        padding: 80px 10px 70px;
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(26);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(24);
+                        line-height: rem-calc(28);
+                    }
+                }
+
+                >h3 {
+
+                    @include md {
+                        grid-area: books-tag;
+                        z-index: 2;
+                        height: 45px;
+                        width: 444px;
+                        text-align: right;
+                        margin: 20px 100px;
+                    }
+
+                }
+
+                >aside {
+                    background-image: url(../img/section-5/books.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 30vh;
+
+                    @include md {
+                        grid-area: books-tag;
+
+                    }
+                }
+
+            }
+
+            #tattoo-parlour {
+
+                @include md {
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    grid-template-areas: " tattoo-words tattoo-tag";
+                }
+
+                >h3 {
+                    margin: 0px;
+
+                    @include md {
+                        grid-area: tattoo-tag;
+                        z-index: 2;
+                        height: 45px;
+                        width: 444px;
+                        text-align: left;
+                        margin: 20px -300px;
+                    }
+                }
+
+
+
+                >aside {
+                    background-image: url(../img/section-5/tattoo.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 30vh;
+
+                    @include md {
+                        grid-area: tattoo-tag;
+
+                    }
+                }
+
+                >p {
+                    padding: 50px 10px;
+                    font-size: rem-calc(18);
+                    line-height: rem-calc(22);
+
+                    @include md {
+                        grid-area: tattoo-words;
+                        padding: 80px 10px 70px;
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(26);
+                    }
+
+                    @include lg {
+                        font-size: rem-calc(24);
+                        line-height: rem-calc(28);
+                    }
+                }
+            }
+        }
+
+
+    }
 }

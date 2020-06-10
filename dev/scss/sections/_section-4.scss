@@ -1,13 +1,14 @@
 //section 4
 
 #section-4 {
-	background-image: url(../img/section-4/neon.jpg);
-	background-position: center;
-	background-size: cover;
-	height: 30vh;
-	margin-top: 80px;
-	@include lg {
-		background-position: center;
-		height: 40vh;
-	}
+    background-image: url(../img/section-4/neon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    margin-top: 80px;
+
+    @include lg {
+        background-position: center;
+        height: 40vh;
+    }
 }

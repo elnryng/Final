@@ -324,7 +324,9 @@ ul {
 
 .mobile-only {
   display: block !important; }
-
+  @media (min-width: 768px) {
+    .mobile-only {
+      display: none !important; } }
 .hide-for-mobile-and-tab {
   display: none; }
   @media (min-width: 992px) {
@@ -348,110 +350,110 @@ ul {
       display: none !important; } }
 .tag-header {
   background-color: #fffbcf;
-  color: #000;
+  text-align: center;
   font-size: 2rem;
   padding: 10px;
-  text-align: center; }
+  color: #000; }
 
 .mobile-charity.tablet-charity-left {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  flex-direction: column; }
   .mobile-charity.tablet-charity-left > h3 {
+    width: 230px;
     font-size: 1.5rem;
-    margin-bottom: 0px;
-    width: 230px; }
+    margin-bottom: 0px; }
   .mobile-charity.tablet-charity-left > aside {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 250px;
     height: 142px;
-    width: 250px; }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .mobile-charity.tablet-charity-left > div {
     margin: 5% 77px; }
   @media (min-width: 768px) {
     .mobile-charity.tablet-charity-left {
+      margin-top: 84px;
       display: grid;
-      grid-template-columns: 35% 45% 20%;
-      margin-top: 84px; }
+      grid-template-columns: 35% 45% 20%; }
       .mobile-charity.tablet-charity-left > h3 {
-        font-size: 2rem;
         height: 39px;
-        margin-left: 180px;
-        margin-top: 30px;
-        text-align: left;
         width: 444px;
-        z-index: 2; }
+        font-size: 2rem;
+        text-align: left;
+        z-index: 2;
+        margin-top: 30px;
+        margin-left: 180px; }
       .mobile-charity.tablet-charity-left > article {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
+        margin-top: 20%;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 20%; }
+        font-size: 1.25rem;
+        line-height: 1.5rem; }
       .mobile-charity.tablet-charity-left > aside {
-        background-position: -130px 0px;
+        width: 100%;
         height: 35vh;
-        width: 100%; }
+        background-position: -130px 0px; }
       .mobile-charity.tablet-charity-left > div {
         margin-left: 0px;
         margin-right: 10px; } }
 .mobile-charity.tablet-charity-right {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  flex-direction: column; }
   .mobile-charity.tablet-charity-right > h3 {
+    width: 230px;
     font-size: 1.5rem;
-    margin-bottom: 0px;
-    width: 230px; }
+    margin-bottom: 0px; }
   .mobile-charity.tablet-charity-right > aside {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 250px;
     height: 142px;
-    width: 250px; }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
   .mobile-charity.tablet-charity-right > div {
     margin: 5% 77px; }
   @media (min-width: 768px) {
     .mobile-charity.tablet-charity-right {
+      margin-top: 84px;
       display: grid;
-      grid-template-columns: 20% 45% 35%;
-      margin-top: 84px; }
+      grid-template-columns: 20% 45% 35%; }
       .mobile-charity.tablet-charity-right > h3 {
-        font-size: 2rem;
         height: 39px;
-        margin-bottom: 97%;
-        margin-left: -310px;
-        text-align: right;
         width: 500px;
-        z-index: 2; }
+        font-size: 2rem;
+        text-align: right;
+        z-index: 2;
+        margin-bottom: 97%;
+        margin-left: -310px; }
       .mobile-charity.tablet-charity-right > article {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
+        margin-top: 20%;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 20%; }
+        font-size: 1.25rem;
+        line-height: 1.5rem; }
       .mobile-charity.tablet-charity-right > aside {
-        background-position: center;
+        width: 100%;
         height: 35vh;
-        width: 100%; }
+        background-position: center; }
       .mobile-charity.tablet-charity-right > div {
         grid-area: more;
-        margin-left: 10px;
-        margin-right: 0px; } }
+        margin-right: 0px;
+        margin-left: 10px; } }
 .ticket-label {
+  text-align: center;
   background-color: #d9aa08;
   border-radius: 8px;
   font-size: 1.4375rem;
   margin: 30px 14px;
-  padding: 10px 5px;
-  text-align: center; }
+  padding: 10px 5px; }
   @media (min-width: 768px) {
     .ticket-label {
-      background-color: #560101;
       color: #fff;
       font-size: 1.25rem;
-      length: inherit;
-      white-space: nowrap; } }
+      background-color: #560101;
+      white-space: nowrap;
+      length: inherit; } }
 .ticket-text {
   color: #d9aa08;
   font-size: 1rem;
@@ -462,18 +464,18 @@ ul {
       font-size: 1.625rem;
       line-height: 1.75rem; } }
 .ticket-price {
+  text-align: center;
   color: #d9aa08;
   font-size: 1.625rem;
-  margin: 20px 0px 15px;
-  text-align: center; }
+  margin: 20px 0px 15px; }
   @media (min-width: 768px) {
     .ticket-price {
       margin: auto; } }
 @media (min-width: 768px) {
   .ticket-grid {
     display: grid;
-    grid-template-areas: "tag tag tag tag price" "desc desc desc desc desc";
-    grid-template-columns: repeat(5, 1fr); }
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "tag tag tag tag price" "desc desc desc desc desc"; }
     .ticket-grid > h3 {
       grid-area: tag;
       margin: 0px 0px 20px 0px; }
@@ -590,31 +592,31 @@ header {
   background-color: #8E0e0e;
   height: 10vh;
   position: fixed;
-  top: 0;
   width: 100%;
+  top: 0;
   z-index: 1000; }
   @media (min-width: 768px) {
     header {
+      height: 15vh;
       display: grid;
-      grid-template-areas: ". nav ." "title title title";
       grid-template-columns: 20% auto 20%;
-      height: 15vh; } }
+      grid-template-areas: ". nav ." "title title title"; } }
   @media (min-width: 992px) {
     header {
       height: 10vh; } }
   header #nav-container {
-    font-size: 1.125rem;
-    font-style: italic;
     margin-top: 0px;
+    font-style: italic;
+    font-size: 1.125rem;
     padding: 20px 30px 0px 30px; }
     @media (min-width: 768px) {
       header #nav-container {
-        display: flex !important;
         grid-area: nav;
+        display: flex !important;
         justify-content: space-between; } }
     header #nav-container > li > a {
-      color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #fff; }
     header #nav-container > li a:link,
     header #nav-container > li a:visited {
       color: #fff;
@@ -624,16 +626,16 @@ header {
     header #nav-container > li a:active {
       color: #000; }
   header #mobile-title {
-    color: #fff;
+    margin-top: 0px;
+    text-align: center;
     font-size: 1.25rem;
-    margin-top: 0px;
-    text-align: center; }
+    color: #fff; }
   header #menu-burger {
-    color: #fff;
-    font-size: 1.5rem;
+    text-align: left;
     margin-top: 0px;
-    padding: 10px 0px 0px 10px;
-    text-align: left; }
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px 0px 0px 10px; }
     header #menu-burger i {
       cursor: pointer; }
     header #menu-burger a:link,
@@ -650,14 +652,14 @@ header {
       header #title {
         grid-area: title; } }
     header #title #top {
-      background-color: #8E0e0e;
+      margin-bottom: 0px;
+      margin-top: 0px;
       color: #fff;
-      margin-bottom: 0px;
-      margin-top: 0px; }
+      background-color: #8E0e0e; }
     header #title #bottom {
-      background-color: #fff;
+      margin-top: 0px;
       margin-bottom: 0px;
-      margin-top: 0px; }
+      background-color: #fff; }
 
 /* =============
     Footer
@@ -787,60 +789,60 @@ footer {
           margin-bottom: 30px; } }
 #section-1 {
   display: grid;
-  font-size: 1rem;
   height: 10vh;
-  line-height: 1.25rem;
-  margin: 50px 10px;
   padding: 70px 0px 20px;
-  text-align: justify; }
+  text-align: justify;
+  margin: 50px 10px;
+  font-size: 1rem;
+  line-height: 1.25rem; }
   @media (min-width: 768px) {
     #section-1 {
-      background-image: url(../img/section-1/library.jpg);
-      background-position: center;
-      background-size: cover;
-      color: #fff;
-      font-style: italic;
-      font-weight: 700;
-      grid-template-areas: ". text .";
       grid-template-columns: auto 55% auto;
+      grid-template-areas: ". text .";
+      background-image: url(../img/section-1/library.jpg);
+      background-size: cover;
+      background-position: center;
       height: 420px;
+      padding: 58px;
       margin: 300px 0px 80px;
-      padding: 58px; } }
+      color: #fff;
+      font-weight: 700;
+      font-style: italic; } }
   @media (min-width: 992px) {
     #section-1 {
       background-image: none;
       color: #000;
       font-style: normal;
-      gap: 10px;
-      grid-template-areas: "eye text pointer";
       grid-template-columns: auto 55% auto;
-      justify-content: center;
-      margin: 220px 10px 0px; } }
+      grid-template-areas: "eye text pointer";
+      gap: 10px;
+      margin: 220px 10px 0px;
+      justify-content: center; } }
   @media (min-width: 1200px) {
     #section-1 {
-      grid-gap: 20px;
-      grid-template-areas: "eye text pointer";
       grid-template-columns: auto 30% auto;
+      grid-template-areas: "eye text pointer";
       margin: 120px;
-      padding-top: 180px; } }
+      padding-top: 180px;
+      grid-gap: 20px; } }
   #section-1 > article {
     grid-area: text; }
   #section-1 #eye {
-    background-image: url(../img/section-1/eye.png);
-    background-position: center;
-    background-size: cover;
     grid-area: eye;
+    background-image: url(../img/section-1/eye.png);
     height: 170px;
-    width: 200px; }
+    width: 200px;
+    background-size: cover;
+    background-position: center; }
     @media (min-width: 1200px) {
       #section-1 #eye {
         height: 320px;
         width: 390px; } }
 #hand {
-  background-image: url(../img/section-1/pointer.png);
-  background-position: center;
-  background-size: cover;
   grid-area: pointer;
+  background-image: url(../img/section-1/pointer.png);
+  background-size: cover;
+  background-position: center;
   height: 170px;
   width: 200px; }
   @media (min-width: 1200px) {
@@ -849,8 +851,8 @@ footer {
       width: 398px; } }
 #section-2 {
   background-image: url(../img/section-2/hero1.jpg);
-  background-position: 0px 600px;
   background-size: cover;
+  background-position: 0px 600px;
   height: 30vh; }
   @media (min-width: 992px) {
     #section-2 {
@@ -859,24 +861,25 @@ footer {
 @media (min-width: 1200px) {
   #section-3 {
     display: grid;
-    grid-template-columns: auto 1004px auto; } }
+    grid-template-columns: auto 1004px auto;
+    grid-template-areas: ". section-3-container ."; } }
 
 #section-3 #section-3-container {
   grid-area: section-3-container; }
   #section-3 #section-3-container > h2 {
-    align-content: center;
-    text-align: center; }
+    text-align: center;
+    align-content: center; }
     @media (min-width: 992px) {
       #section-3 #section-3-container > h2 {
         margin-top: 120px; } }
   #section-3 #section-3-container #address-grid {
     display: grid;
-    grid-template-areas: "location location" "case time";
-    grid-template-columns: 45% auto; }
+    grid-template-columns: 45% auto;
+    grid-template-areas: "location location" "case time"; }
     @media (min-width: 768px) {
       #section-3 #section-3-container #address-grid {
-        grid-template-areas: "caseinfo time";
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "caseinfo time"; } }
     @media (min-width: 992px) {
       #section-3 #section-3-container #address-grid {
         margin: 0px 50px; } }
@@ -884,54 +887,63 @@ footer {
       #section-3 #section-3-container #address-grid {
         margin: 85px 218px; } }
     #section-3 #section-3-container #address-grid #location {
-      background-color: #fffbcf;
       grid-area: location;
-      padding-bottom: 36px;
-      text-align: center; }
+      text-align: center;
+      background-color: #fffbcf;
+      padding-bottom: 36px; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-container #address-grid #location {
+          padding-bottom: 0px;
+          padding-left: 20px;
+          text-align: left;
+          width: 400px;
+          margin-left: 70%;
+          margin-right: -400px;
+          margin-top: 22px; } }
+      #section-3 #section-3-container #address-grid #location > h4 {
+        font-style: italic;
+        font-size: 1.5rem;
+        padding-bottom: 22px;
+        padding-top: 28px;
+        margin: 0px; }
+        @media (min-width: 768px) {
+          #section-3 #section-3-container #address-grid #location > h4 {
+            padding-bottom: 18px;
+            padding-left: 20px;
+            font-size: 1.75rem; } }
+      #section-3 #section-3-container #address-grid #location > p {
+        text-align: left;
+        padding-left: 66px;
+        margin: 0px;
+        font-style: italic; }
+        @media (min-width: 768px) {
+          #section-3 #section-3-container #address-grid #location > p {
+            padding-left: 20px;
+            font-size: 1.125rem; } }
       @media (min-width: 768px) {
         #section-3 #section-3-container #address-grid #location {
           grid-area: caseinfo;
-          height: 140px;
-          z-index: 2; } }
-      #section-3 #section-3-container #address-grid #location > h4 {
-        font-size: 1.5rem;
-        font-style: italic;
-        margin: 0px;
-        padding-bottom: 22px;
-        padding-top: 28px; }
-        @media (min-width: 768px) {
-          #section-3 #section-3-container #address-grid #location > h4 {
-            font-size: 1.75rem;
-            padding-bottom: 18px;
-            padding-left: 20px; } }
-      #section-3 #section-3-container #address-grid #location > p {
-        font-style: italic;
-        margin: 0px;
-        padding-left: 66px;
-        text-align: left; }
-        @media (min-width: 768px) {
-          #section-3 #section-3-container #address-grid #location > p {
-            font-size: 1.125rem;
-            padding-left: 20px; } }
+          z-index: 2;
+          height: 140px; } }
     #section-3 #section-3-container #address-grid #case-image {
       background-image: url(../img/section-3/case.jpg);
-      background-position: center;
+      height: 30vh;
       background-size: cover;
-      height: 30vh; }
+      background-position: center; }
       @media (min-width: 768px) {
         #section-3 #section-3-container #address-grid #case-image {
           grid-area: caseinfo;
           height: 30vh; } }
     #section-3 #section-3-container #address-grid #time {
       grid-area: time;
-      padding-top: 33%;
-      text-align: center; }
+      text-align: center;
+      padding-top: 33%; }
       @media (min-width: 768px) {
         #section-3 #section-3-container #address-grid #time {
           font-size: 1.3125rem;
           line-height: 0.9375rem;
-          padding-left: 20px;
           padding-top: 50%;
+          padding-left: 20px;
           text-align: left; } }
       @media (min-width: 992px) {
         #section-3 #section-3-container #address-grid #time {
@@ -939,11 +951,11 @@ footer {
   @media (min-width: 768px) {
     #section-3 #section-3-container #image-grid {
       display: grid;
-      grid-gap: 36px;
-      grid-template-areas: "bunnies tag painting" ". . painting" "words words painting" ". . painting";
       grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "bunnies tag painting" ". . painting" "words words painting" ". . painting";
       margin-left: 10px;
-      margin-top: 85px; } }
+      margin-top: 85px;
+      grid-gap: 36px; } }
   @media (min-width: 992px) {
     #section-3 #section-3-container #image-grid {
       margin: 85px 50px 40px; } }
@@ -970,34 +982,34 @@ footer {
         font-size: 1.3125rem;
         line-height: 1.625rem; } }
   #section-3 #section-3-container #image-grid #bunnies-image {
-    background-image: url(../img/section-3/bunnies.jpg);
-    background-position: center;
-    background-size: 100%;
     grid-area: bunnies;
+    background-image: url(../img/section-3/bunnies.jpg);
+    background-size: 100%;
+    background-position: center;
     height: 15vh; }
   #section-3 #section-3-container #image-grid #tag-image {
-    background-image: url(../img/section-3/tag.jpg);
-    background-position: center;
-    background-size: 100%;
     grid-area: tag;
+    background-image: url(../img/section-3/tag.jpg);
+    background-size: 100%;
+    background-position: center;
     height: 15vh; }
   #section-3 #section-3-container #image-grid #painting-image {
     background-image: url(../img/section-3/painting.jpg);
     background-position: 0px 230px;
     background-size: cover;
     height: 20vh;
-    margin-bottom: 40px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 40px; }
     @media (min-width: 768px) {
       #section-3 #section-3-container #image-grid #painting-image {
-        background-position: center;
         grid-area: painting;
+        margin-top: 0px;
         height: inherit;
-        margin-top: 0px; } }
+        background-position: center; } }
 #section-4 {
   background-image: url(../img/section-4/neon.jpg);
-  background-position: center;
   background-size: cover;
+  background-position: center;
   height: 30vh;
   margin-top: 80px; }
   @media (min-width: 992px) {
@@ -1007,18 +1019,20 @@ footer {
 @media (min-width: 992px) {
   #section-5 {
     display: grid;
-    grid-template-columns: 50px auto 50px; } }
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: ". section-5-container ."; } }
 
 @media (min-width: 1200px) {
   #section-5 {
     display: grid;
-    grid-template-columns: auto 1004px auto; } }
+    grid-template-columns: auto 1004px auto;
+    grid-template-areas: ". section-5-container ."; } }
 
 #section-5 #section-5-container {
   grid-area: section-5-container; }
   #section-5 #section-5-container > h2 {
-    align-content: center;
-    text-align: center; }
+    text-align: center;
+    align-content: center; }
     @media (min-width: 768px) {
       #section-5 #section-5-container > h2 {
         margin-top: 80px; } }
@@ -1030,26 +1044,26 @@ footer {
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #flea-market {
         display: grid;
-        grid-template-areas: " doll-words doll-tag";
-        grid-template-columns: 60% 40%; } }
+        grid-template-columns: 60% 40%;
+        grid-template-areas: " doll-words doll-tag"; } }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #flea-market > h3 {
         grid-area: doll-tag;
+        z-index: 2;
         height: 45px;
-        margin: 20px -300px;
-        text-align: left;
         width: 444px;
-        z-index: 2; } }
+        text-align: left;
+        margin: 20px -300px; } }
     #section-5 #section-5-container #attraction-grid #flea-market > p {
+      padding: 30px 10px;
       font-size: 1.125rem;
-      line-height: 1.375rem;
-      padding: 30px 10px; }
+      line-height: 1.375rem; }
       @media (min-width: 768px) {
         #section-5 #section-5-container #attraction-grid #flea-market > p {
-          font-size: 1.3125rem;
           grid-area: doll-words;
-          line-height: 1.625rem;
-          padding: 80px 10px 70px; } }
+          padding: 80px 10px 70px;
+          font-size: 1.3125rem;
+          line-height: 1.625rem; } }
       @media (min-width: 992px) {
         #section-5 #section-5-container #attraction-grid #flea-market > p {
           font-size: 1.5rem;
@@ -1065,19 +1079,19 @@ footer {
   @media (min-width: 768px) {
     #section-5 #section-5-container #attraction-grid #odducation {
       display: grid;
-      grid-template-areas: " books-tag books-words";
       grid-template-columns: 40% 60%;
+      grid-template-areas: " books-tag books-words";
       margin-bottom: 92px; } }
   #section-5 #section-5-container #attraction-grid #odducation > p {
+    padding: 35px 10px;
     font-size: 1.125rem;
-    line-height: 1.375rem;
-    padding: 35px 10px; }
+    line-height: 1.375rem; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #odducation > p {
-        font-size: 1.3125rem;
         grid-area: books-words;
-        line-height: 1.625rem;
-        padding: 80px 10px 70px; } }
+        padding: 80px 10px 70px;
+        font-size: 1.3125rem;
+        line-height: 1.625rem; } }
     @media (min-width: 992px) {
       #section-5 #section-5-container #attraction-grid #odducation > p {
         font-size: 1.5rem;
@@ -1085,11 +1099,11 @@ footer {
   @media (min-width: 768px) {
     #section-5 #section-5-container #attraction-grid #odducation > h3 {
       grid-area: books-tag;
+      z-index: 2;
       height: 45px;
-      margin: 20px 100px;
-      text-align: right;
       width: 444px;
-      z-index: 2; } }
+      text-align: right;
+      margin: 20px 100px; } }
   #section-5 #section-5-container #attraction-grid #odducation > aside {
     background-image: url(../img/section-5/books.jpg);
     background-position: center;
@@ -1101,18 +1115,18 @@ footer {
   @media (min-width: 768px) {
     #section-5 #section-5-container #attraction-grid #tattoo-parlour {
       display: grid;
-      grid-template-areas: " tattoo-words tattoo-tag";
-      grid-template-columns: 60% 40%; } }
+      grid-template-columns: 60% 40%;
+      grid-template-areas: " tattoo-words tattoo-tag"; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > h3 {
     margin: 0px; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > h3 {
         grid-area: tattoo-tag;
+        z-index: 2;
         height: 45px;
-        margin: 20px -300px;
-        text-align: left;
         width: 444px;
-        z-index: 2; } }
+        text-align: left;
+        margin: 20px -300px; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > aside {
     background-image: url(../img/section-5/tattoo.jpg);
     background-position: center;
@@ -1122,23 +1136,23 @@ footer {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > aside {
         grid-area: tattoo-tag; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
+    padding: 50px 10px;
     font-size: 1.125rem;
-    line-height: 1.375rem;
-    padding: 50px 10px; }
+    line-height: 1.375rem; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
-        font-size: 1.3125rem;
         grid-area: tattoo-words;
-        line-height: 1.625rem;
-        padding: 80px 10px 70px; } }
+        padding: 80px 10px 70px;
+        font-size: 1.3125rem;
+        line-height: 1.625rem; } }
     @media (min-width: 992px) {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
         font-size: 1.5rem;
         line-height: 1.75rem; } }
 #section-6 {
   background-image: url(../img/section-6/hero3.jpg);
-  background-position: 0px -200px;
   background-size: cover;
+  background-position: 0px -200px;
   height: 30vh;
   margin-top: 80px; }
   @media (min-width: 992px) {
@@ -1155,18 +1169,19 @@ footer {
   margin-bottom: 50px; }
   @media (min-width: 992px) {
     #section-7 {
+      margin-top: 0px;
+      margin-bottom: 0px;
       display: grid;
       grid-template-columns: 100px auto 100px;
-      margin-bottom: 0px;
-      margin-top: 0px; } }
+      grid-template-areas: ". section-7-container ."; } }
   @media (min-width: 1200px) {
     #section-7 {
       display: block; } }
   #section-7 #section-7-container {
     grid-area: section-7-container; }
     #section-7 #section-7-container > h2 {
-      margin-top: 0px;
       padding-top: 30px;
+      margin-top: 0px;
       text-align: center; }
       @media (min-width: 768px) {
         #section-7 #section-7-container > h2 {
@@ -1184,8 +1199,8 @@ footer {
         grid-template-areas: "dogtag words words" ". words words" ". . more"; } }
     @media (min-width: 1200px) {
       #section-7 #section-7-container #pitbulls {
-        grid-template-areas: "dogtag words" "dogtag more";
-        grid-template-columns: 55% auto; } }
+        grid-template-columns: 55% auto;
+        grid-template-areas: "dogtag words" "dogtag more"; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #pitbulls > h3 {
         grid-area: dogtag; } }
@@ -1220,8 +1235,8 @@ footer {
           grid-template-areas: " words words owltag" "words words ." ". . more"; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #pmwc {
-          grid-template-areas: "words owltag" "more owltag";
-          grid-template-columns: 65% 35%; } }
+          grid-template-columns: 65% 35%;
+          grid-template-areas: "words owltag" "more owltag"; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #pmwc > h3 {
           grid-area: owltag; } }
@@ -1256,8 +1271,8 @@ footer {
         grid-template-areas: "butterflytag words words" ". words words" ". . more"; } }
     @media (min-width: 1200px) {
       #section-7 #section-7-container #opmonarch {
-        grid-template-areas: "butterflytag words" "butterflytag more";
-        grid-template-columns: 50% 50%; } }
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "butterflytag words" "butterflytag more"; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #opmonarch > h3 {
         grid-area: butterflytag; } }
@@ -1291,8 +1306,8 @@ footer {
         #section-7 #section-7-container #mutter {
           grid-template-areas: " words words skulltag" "words words ." ". quote more"; }
           #section-7 #section-7-container #mutter #pullquote {
-            font-size: 1.75rem;
             grid-area: quote;
+            font-size: 1.75rem;
             line-height: 1.875rem; } }
     @media (min-width: 768px) and (min-width: 992px) {
       #section-7 #section-7-container #mutter #pullquote {
@@ -1304,8 +1319,8 @@ footer {
         margin-top: 0px; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter {
-          grid-template-areas: "words skulltag" "more skulltag" "quote skulltag";
-          grid-template-columns: 65% 35%; } }
+          grid-template-columns: 65% 35%;
+          grid-template-areas: "words skulltag" "more skulltag" "quote skulltag"; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #mutter > h3 {
           grid-area: skulltag;
@@ -1316,46 +1331,46 @@ footer {
           margin-bottom: 200%; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter > h3 {
-          margin-bottom: auto;
           margin-left: -400px;
+          margin-bottom: auto;
           margin-top: 30px; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #mutter > article {
           grid-area: words;
-          margin-bottom: 30%;
-          margin-top: 0px; } }
+          margin-top: 0px;
+          margin-bottom: 30%; } }
       @media (min-width: 992px) {
         #section-7 #section-7-container #mutter > article {
           margin-bottom: 50%; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter > article {
-          margin-bottom: 0px;
           margin-left: 50%;
+          margin-bottom: 0px;
           padding-top: 100px; } }
       #section-7 #section-7-container #mutter > aside {
         background-image: url(../img/section-7/skull-and-preserve.jpg);
         background-position: 0 -70px; }
         @media (min-width: 768px) {
           #section-7 #section-7-container #mutter > aside {
-            background-position: 0 -70px;
             grid-area: skulltag;
+            background-position: 0 -70px;
             height: 50vh; } }
         @media (min-width: 1200px) {
           #section-7 #section-7-container #mutter > aside {
             height: 1200px; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #mutter > div {
-          align-items: center;
-          display: flex;
           grid-area: more;
+          display: flex;
           height: 100%;
           justify-content: center;
+          align-items: center;
           margin-left: 0px;
           margin-right: 10px; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter > div {
-          align-items: flex-end;
           justify-content: flex-end;
+          align-items: flex-end;
           margin-right: 30px; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #als {
@@ -1365,8 +1380,8 @@ footer {
         padding-bottom: 84px; } }
     @media (min-width: 1200px) {
       #section-7 #section-7-container #als {
-        grid-template-areas: "handstag words" "handstag more";
-        grid-template-columns: 50% 50%; } }
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "handstag words" "handstag more"; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #als > h3 {
         grid-area: handstag; } }
@@ -1387,8 +1402,8 @@ footer {
           grid-area: handstag; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #als > aside {
-          background-position: center;
-          height: 100%; } }
+          height: 100%;
+          background-position: center; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #als > div {
         grid-area: more; } }
@@ -1397,9 +1412,9 @@ footer {
         margin-left: 60%; } }
 #section-8 {
   background-image: url(../img/section-8/hero4.jpg);
+  background-size: cover;
   background-position: 0px -200px;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 30vh;
   margin-top: 0px; }
   @media (min-width: 1200px) {
@@ -1456,9 +1471,9 @@ footer {
           @media (min-width: 768px) {
             #section-9 > div #border-middle #content-container #content-goes-here {
               display: grid;
-              grid-template-areas: ". genad genad . . ." ". . taxiwork taxiwork taxiwork ." ". insect insect . . ." ". . owl owl owl .";
               grid-template-columns: 80px auto auto auto auto 80px;
-              grid-template-rows: 4; } }
+              grid-template-rows: 4;
+              grid-template-areas: ". genad genad . . ." ". . taxiwork taxiwork taxiwork ." ". insect insect . . ." ". . owl owl owl ."; } }
           @media (min-width: 992px) {
             #section-9 > div #border-middle #content-container #content-goes-here {
               grid-area: section-9; } }
@@ -1483,8 +1498,8 @@ footer {
               grid-area: insect;
               margin-bottom: 60px; } }
           #section-9 > div #border-middle #content-container #content-goes-here #owlpellet {
-            margin-bottom: 30px;
-            padding-bottom: 30px; }
+            padding-bottom: 30px;
+            margin-bottom: 30px; }
             @media (min-width: 768px) {
               #section-9 > div #border-middle #content-container #content-goes-here #owlpellet {
                 grid-area: owl; } }

@@ -1,13 +1,14 @@
 //section 8
 #section-8 {
-	background-image: url(../img/section-8/hero4.jpg);
-	background-position: 0px -200px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 30vh;
-	margin-top: 0px;
-	@include xl {
-		background-position: 0px -250px;
-		height: 40vh;
-	}
+    background-image: url(../img/section-8/hero4.jpg);
+    background-size: cover;
+    background-position: 0px -200px;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin-top: 0px;
+
+    @include xl {
+        background-position: 0px -250px;
+        height: 40vh;
+    }
 }
