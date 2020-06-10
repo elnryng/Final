@@ -2,268 +2,201 @@
     Base
 ============= */
 ul {
-    padding: 0;
-
-    li {
-        list-style: none;
-    }
+	padding: 0;
+	li {
+		list-style: none;
+	}
 }
-
 .mobile-only {
-    display: block !important;
-
-    @include md {
-        display: none !important
-    }
+	display: block !important;
+	@include md {
+	}
 }
-
 .hide-for-mobile-and-tab {
-    display: none;
-
-    @include lg {
-        display: block !important;
-    }
-
+	display: none;
+	@include lg {
+		display: block !important;
+	}
 }
-
 .hide-for-mobile {
-    display: none !important;
-
-    @include md {
-        display: block !important;
-    }
-
+	display: none !important;
+	@include md {
+		display: block !important;
+	}
 }
-
 .show-for-tablet {
-    display: none;
-
-    @include md {
-        display: block !important;
-    }
-
-    @include lg {
-        display: none !important;
-    }
-
-    @include xl {
-        display: none !important;
-    }
+	display: none;
+	@include md {
+		display: block !important;
+	}
+	@include lg {
+		display: none !important;
+	}
+	@include xl {
+		display: none !important;
+	}
 }
-
 .tag-header {
-    background-color: $cream;
-    text-align: center;
-    font-size: rem-calc(32);
-    padding: 10px;
-    color: $black;
-
+	background-color: $cream;
+	color: $black;
+	font-size: rem-calc(32);
+	padding: 10px;
+	text-align: center;
 }
-
 .mobile-charity.tablet-charity-left {
-
-
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-
-    >h3 {
-        width: 230px;
-        font-size: rem-calc(24);
-        margin-bottom: 0px;
-    }
-
-    >aside {
-
-        width: 250px;
-        height: 142px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    >div {
-        margin: 5% 77px;
-
-    }
-
-
-    @include md {
-        margin-top: 84px;
-        display: grid;
-        grid-template-columns: 35% 45% 20%;
-
-        >h3 {
-
-            height: 39px;
-            width: 444px;
-            font-size: rem-calc(32);
-            text-align: left;
-            z-index: 2;
-            margin-top: 30px;
-            margin-left: 180px;
-        }
-
-
-        >article {
-
-            margin-top: 20%;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-size: rem-calc(20);
-            line-height: rem-calc(24);
-        }
-
-        >aside {
-
-            width: 100%;
-            height: 35vh;
-            background-position: -130px 0px;
-
-        }
-
-        >div {
-
-            margin-left: 0px;
-            margin-right: 10px;
-        }
-
-
-
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	>h3 {
+		font-size: rem-calc(24);
+		margin-bottom: 0px;
+		width: 230px;
+	}
+	>aside {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 142px;
+		width: 250px;
+	}
+	>div {
+		margin: 5% 77px;
+	}
+	@include md {
+		display: grid;
+		grid-template-columns: 35% 45% 20%;
+		margin-top: 84px;
+		>h3 {
+			font-size: rem-calc(32);
+			height: 39px;
+			margin-left: 180px;
+			margin-top: 30px;
+			text-align: left;
+			width: 444px;
+			z-index: 2;
+		}
+		>article {
+			font-size: rem-calc(20);
+			line-height: rem-calc(24);
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 20%;
+		}
+		>aside {
+			background-position: -130px 0px;
+			height: 35vh;
+			width: 100%;
+		}
+		>div {
+			margin-left: 0px;
+			margin-right: 10px;
+		}
+	}
 }
-
 .mobile-charity.tablet-charity-right {
-
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-
-    >h3 {
-        width: 230px;
-        font-size: rem-calc(24);
-        margin-bottom: 0px;
-    }
-
-    >aside {
-
-        width: 250px;
-        height: 142px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    >div {
-        margin: 5% 77px;
-
-    }
-
-    @include md {
-        margin-top: 84px;
-        display: grid;
-        grid-template-columns: 20% 45% 35%;
-
-        >h3 {
-            height: 39px;
-            width: 500px;
-            font-size: rem-calc(32);
-            text-align: right;
-            z-index: 2;
-            margin-bottom: 97%;
-            margin-left: -310px;
-        }
-
-        >article {
-            margin-top: 20%;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-size: rem-calc(20);
-            line-height: rem-calc(24);
-        }
-
-        >aside {
-            width: 100%;
-            height: 35vh;
-            background-position: center;
-        }
-
-        >div {
-            grid-area: more;
-            margin-right: 0px;
-            margin-left: 10px;
-        }
-    }
-
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	>h3 {
+		font-size: rem-calc(24);
+		margin-bottom: 0px;
+		width: 230px;
+	}
+	>aside {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 142px;
+		width: 250px;
+	}
+	>div {
+		margin: 5% 77px;
+	}
+	@include md {
+		display: grid;
+		grid-template-columns: 20% 45% 35%;
+		margin-top: 84px;
+		>h3 {
+			font-size: rem-calc(32);
+			height: 39px;
+			margin-bottom: 97%;
+			margin-left: -310px;
+			text-align: right;
+			width: 500px;
+			z-index: 2;
+		}
+		>article {
+			font-size: rem-calc(20);
+			line-height: rem-calc(24);
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-top: 20%;
+		}
+		>aside {
+			background-position: center;
+			height: 35vh;
+			width: 100%;
+		}
+		>div {
+			grid-area: more;
+			margin-left: 10px;
+			margin-right: 0px;
+		}
+	}
 }
-
 .ticket-label {
-    text-align: center;
-    background-color: $gold;
-    border-radius: 8px;
-    font-size: rem-calc(23);
-    margin: 30px 14px;
-    padding: 10px 5px;
-
-    @include md {
-        color: $white;
-        font-size: rem-calc(20);
-        background-color: $burgundy;
-        white-space: nowrap;
-        length: inherit;
-    }
+	background-color: $gold;
+	border-radius: 8px;
+	font-size: rem-calc(23);
+	margin: 30px 14px;
+	padding: 10px 5px;
+	text-align: center;
+	@include md {
+		background-color: $burgundy;
+		color: $white;
+		font-size: rem-calc(20);
+		length: inherit;
+		white-space: nowrap;
+	}
 }
-
 .ticket-text {
-    color: $gold;
-    font-size: rem-calc(16);
-    line-height: rem-calc(20);
-    margin: 0px 10px 50px;
-
-    @include xl {
-        font-size: rem-calc(26);
-        line-height: rem-calc(28);
-    }
+	color: $gold;
+	font-size: rem-calc(16);
+	line-height: rem-calc(20);
+	margin: 0px 10px 50px;
+	@include xl {
+		font-size: rem-calc(26);
+		line-height: rem-calc(28);
+	}
 }
-
 .ticket-price {
-    text-align: center;
-    color: $gold;
-    font-size: rem-calc(26);
-    margin: 20px 0px 15px;
-
-    @include md {
-        margin: auto;
-    }
+	color: $gold;
+	font-size: rem-calc(26);
+	margin: 20px 0px 15px;
+	text-align: center;
+	@include md {
+		margin: auto;
+	}
 }
-
 .ticket-grid {
-    @include md {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-areas:
-            "tag tag tag tag price"
+	@include md {
+		display: grid;
+		grid-template-areas: "tag tag tag tag price"
             "desc desc desc desc desc";
-
-        >h3 {
-            grid-area: tag;
-            margin: 0px 0px 20px 0px;
-        }
-
-        p:first-child {
-            grid-area: price;
-            text-align: center;
-        }
-
-        :last-child {
-            grid-area: desc;
-        }
-    }
-
-    @include xl {
-        margin-bottom: 125px !important;
-    }
-
+		grid-template-columns: repeat(5, 1fr);
+		>h3 {
+			grid-area: tag;
+			margin: 0px 0px 20px 0px;
+		}
+		p:first-child {
+			grid-area: price;
+			text-align: center;
+		}
+		:last-child {
+			grid-area: desc;
+		}
+	}
+	@include xl {
+		margin-bottom: 125px !important;
+	}
 }

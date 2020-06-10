@@ -2,23 +2,17 @@
     Typography
 ============= */
 p {
-    font-family: 'Crimson Text', serif, ;
-    font-weight: 400;
-
+	font-family: 'Crimson Text', serif,;
+	font-weight: 400;
 }
-
 h1,
 h2,
 h3 {
-    font-family: 'New Rocker', cursive;
-
+	font-family: 'New Rocker', cursive;
 }
-
 h2 {
-    font-size: rem-calc(36);
-
-    @include md {
-        font-size: rem-calc(48);
-    }
-
+	font-size: rem-calc(36);
+	@include md {
+		font-size: rem-calc(48);
+	}
 }

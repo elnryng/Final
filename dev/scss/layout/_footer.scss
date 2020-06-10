@@ -2,152 +2,150 @@
     Footer
 ============= */
 footer {
-    background-color: $red;
-    display: grid;
-    grid-template-columns: auto 1fr 1fr 1fr;
-    grid-template-areas:
-        "logos eye-name eye-name eye-name"
+	background-color: $red;
+	display: grid;
+	grid-template-areas: "logos eye-name eye-name eye-name"
         "logos info info buttons"
         "logos info info buttons";
-
-    @include xl {
-        grid-template-columns: auto 15% 1fr 1fr 1fr 20%;
-        grid-template-areas:
-            "logos . eye-name eye-name eye-name ."
+	grid-template-columns: auto 1fr 1fr 1fr;
+	@include xl {
+		grid-template-areas: "logos . eye-name eye-name eye-name ."
             "logos . info info buttons ."
             "logos . info info buttons .";
-    }
-
-    #logos {
-        grid-area: logos;
-        width: 35px;
-        display: flex;
-        flex-direction: column;
-        background-color: $cream;
-        justify-content: space-between;
-        align-items: center;
-        padding: 22px 0px;
-        font-size: rem-calc(25);
-        margin: -100px 15px 15px;
-
-        @include md {
-            margin: -100px 50px 15px 15px;
-        }
-    }
-
-    #eye-logo {
-        grid-area: eye-name;
-        display: grid;
-        grid-template-columns: 25% 30% 10% auto;
-        grid-template-areas:
-            "eye name name name"
+		grid-template-columns: auto 15% 1fr 1fr 1fr 20%;
+	}
+	#logos {
+		align-items: center;
+		background-color: $cream;
+		display: flex;
+		flex-direction: column;
+		font-size: rem-calc(25);
+		grid-area: logos;
+		justify-content: space-between;
+		margin: -100px 15px 15px;
+		padding: 22px 0px;
+		width: 35px;
+		>li {
+			>a {
+				color: $white;
+				text-decoration: none;
+			}
+			a:link,
+            a:visited {
+				color: $black;
+				text-decoration: none;
+				transition: 0.25s;
+			}
+			a:hover,
+            a:active {
+				color: $red;
+			}
+		}
+		>a {
+			color: $white;
+			text-decoration: none;
+		}
+		a:link,
+        a:visited {
+			color: $white;
+			text-decoration: none;
+			transition: 0.25s;
+		}
+		a:hover,
+        a:active {
+			color: $black;
+		}
+		@include md {
+			margin: -100px 50px 15px 15px;
+		}
+	}
+	#eye-logo {
+		display: grid;
+		grid-area: eye-name;
+		grid-template-areas: "eye name name name"
             "eye tagline tagline .";
-
-        @include md {
-            grid-template-columns: 15% 30% 10% auto;
-        }
-
-        @include lg {
-            grid-template-columns: 20% 30% 10% auto;
-            padding-top: 30px;
-            margin-left: 70px;
-        }
-
-
-        >div {
-            grid-area: eye;
-            background-image: url(../img/section-1/eye.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
-
-        >h3 {
-            grid-area: name;
-            margin-top: 40px;
-            margin-bottom: 0px;
-            color: $white;
-
-            @include md {
-                font-size: rem-calc(25);
-
-            }
-
-            @include lg {
-                font-size: rem-calc(40);
-            }
-
-        }
-
-        >p {
-            grid-area: tagline;
-            font-style: italic;
-            margin-top: 5px;
-            color: $white;
-
-            @include md {
-                font-size: rem-calc(20);
-            }
-
-            @include lg {
-                font-size: rem-calc(30);
-            }
-        }
-
-    }
-
-    #info {
-        grid-area: info;
-
-        h4 {
-            font-family: 'New Rocker', cursive;
-            margin: auto 0px 0px 0px;
-            font-size: rem-calc(14);
-            color: $white;
-
-            @include md {
-                font-size: rem-calc(20);
-                margin-top: 20px;
-            }
-
-            @include lg {
-                font-size: rem-calc(26);
-                margin-top: 30px;
-                margin-left: 50px;
-            }
-        }
-
-        >p {
-            font-size: rem-calc(14);
-            color: $white;
-            margin-top: 4px;
-            font-style: italic;
-
-            @include md {
-                font-size: rem-calc(18);
-            }
-
-            @include lg {
-                font-size: rem-calc(22);
-                margin-left: 50px;
-            }
-        }
-    }
-
-    #buttons {
-        grid-area: buttons;
-
-        >div {
-            margin-right: 15px;
-        }
-
-        :first-child {
-            margin-bottom: 20px;
-
-            @include md {
-                margin-bottom: 30px;
-            }
-        }
-
-    }
+		grid-template-columns: 25% 30% 10% auto;
+		@include md {
+			grid-template-columns: 15% 30% 10% auto;
+		}
+		@include lg {
+			grid-template-columns: 20% 30% 10% auto;
+			margin-left: 70px;
+			padding-top: 30px;
+		}
+		>div {
+			background-image: url(../img/section-1/eye.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			grid-area: eye;
+		}
+		>h3 {
+			color: $white;
+			grid-area: name;
+			margin-bottom: 0px;
+			margin-top: 40px;
+			@include md {
+				font-size: rem-calc(25);
+			}
+			@include lg {
+				font-size: rem-calc(40);
+			}
+		}
+		>p {
+			color: $white;
+			font-style: italic;
+			grid-area: tagline;
+			margin-top: 5px;
+			@include md {
+				font-size: rem-calc(20);
+			}
+			@include lg {
+				font-size: rem-calc(30);
+			}
+		}
+	}
+	#info {
+		grid-area: info;
+		h4 {
+			color: $white;
+			font-family: 'New Rocker', cursive;
+			font-size: rem-calc(14);
+			margin: auto 0px 0px 0px;
+			@include md {
+				font-size: rem-calc(20);
+				margin-top: 20px;
+			}
+			@include lg {
+				font-size: rem-calc(26);
+				margin-left: 50px;
+				margin-top: 30px;
+			}
+		}
+		>p {
+			color: $white;
+			font-size: rem-calc(14);
+			font-style: italic;
+			margin-top: 4px;
+			@include md {
+				font-size: rem-calc(18);
+			}
+			@include lg {
+				font-size: rem-calc(22);
+				margin-left: 50px;
+			}
+		}
+	}
+	#buttons {
+		grid-area: buttons;
+		>div {
+			margin-right: 15px;
+		}
+		:first-child {
+			margin-bottom: 20px;
+			@include md {
+				margin-bottom: 30px;
+			}
+		}
+	}
 }

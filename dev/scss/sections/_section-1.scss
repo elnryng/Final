@@ -1,86 +1,67 @@
 //section 1
 #section-1 {
-    display: grid;
-    height: 40vh;
-    text-align: justify;
-    margin: 88px 10px;
-    font-size: rem-calc(16);
-    line-height: rem-calc(20);
-
-    @include md {
-        grid-template-columns: auto 55% auto;
-        grid-template-areas: ". text .";
-        background-image: url(../img/section-1/library.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 420px;
-        padding: 58px;
-        margin: 100px 0px;
-        color: $white;
-        font-weight: 700;
-        font-style: italic;
-    }
-
-    @include lg {
-        background-image: none;
-        color: $black;
-        grid-template-columns: auto 55% auto;
-        grid-template-areas:
-            "eye text pointer";
-        gap: 10px;
-        margin: 120px 10px;
-        justify-content: center;
-    }
-
-    @include xl {
-        grid-template-columns: auto 30% auto;
-        grid-template-areas:
-            "eye text pointer";
-        margin: 120px;
-        grid-gap: 20px;
-    }
-
-    >article {
-        grid-area: text;
-    }
-
-    #eye {
-        grid-area: eye;
-        background-image: url(../img/section-1/eye.png);
-        height: 170px;
-        width: 200px;
-        background-size: cover;
-        background-position: center;
-
-        @include xl {
-            height: 320px;
-            width: 390px;
-        }
-    }
-
+	display: grid;
+	font-size: rem-calc(16);
+	height: 10vh;
+	line-height: rem-calc(20);
+	margin: 50px 10px;
+	padding: 70px 0px 20px;
+	text-align: justify;
+	@include md {
+		background-image: url(../img/section-1/library.jpg);
+		background-position: center;
+		background-size: cover;
+		color: $white;
+		font-style: italic;
+		font-weight: 700;
+		grid-template-areas: ". text .";
+		grid-template-columns: auto 55% auto;
+		height: 420px;
+		margin: 300px 0px 80px;
+		padding: 58px;
+	}
+	@include lg {
+		background-image: none;
+		color: $black;
+		font-style: normal;
+		gap: 10px;
+		grid-template-areas: "eye text pointer";
+		grid-template-columns: auto 55% auto;
+		justify-content: center;
+		margin: 220px 10px 0px;
+	}
+	@include xl {
+		grid-gap: 20px;
+		grid-template-areas: "eye text pointer";
+		grid-template-columns: auto 30% auto;
+		margin: 120px;
+		padding-top: 180px;
+	}
+	>article {
+		grid-area: text;
+	}
+	#eye {
+		background-image: url(../img/section-1/eye.png);
+		background-position: center;
+		background-size: cover;
+		grid-area: eye;
+		height: 170px;
+		width: 200px;
+		@include xl {
+			height: 320px;
+			width: 390px;
+		}
+	}
 }
-
 #hand {
-    grid-area: pointer;
-    background-image: url(../img/section-1/pointer.png);
-    background-size: cover;
-    background-position: center;
-    height: 170px;
-    width: 200px;
-
-    @include xl {
-        height: 345px;
-        width: 398px;
-    }
-
+	background-image: url(../img/section-1/pointer.png);
+	background-position: center;
+	background-size: cover;
+	grid-area: pointer;
+	height: 170px;
+	width: 200px;
+	@include xl {
+		height: 345px;
+		width: 398px;
+	}
 }
-
-// @include xl{  
-//     display:block;
-//     grid-area: pointer;
-//     background-image: url(../img/section-1/pointer.png);
-//     background-size: cover;
-//     background-position: center;
-//     height: 170px;
-//     // width: 200px;
-//     }

@@ -1,139 +1,108 @@
 #section-9 {
-    display: grid;
-    grid-template-areas: ". section-9 .";
-    grid-template-columns: 15px auto 15px;
-    padding-bottom: 80px;
-
-    @include md {
-        padding-bottom: 100px;
-    }
-
-    @include xl {
-        grid-template-columns: auto 1200px auto;
-    }
-
-    >div {
-        grid-area: section-9;
-
-        #border-top {
-            position: relative;
-
-            h2 {
-                bottom: 0;
-                font-size: rem-calc(25);
-                left: 0;
-                position: absolute;
-                right: 0;
-                text-align: center;
-                top: 50%;
-
-                @include md {
-                    font-size: rem-calc(35);
-                }
-
-                @include xl {
-                    font-size: rem-calc(45);
-                }
-            }
-
-            picture {
-                object-fit: cover;
-            }
-
-            img {
-                width: 100%;
-            }
-        }
-
-        #border-middle {
-            background-image: url("../img/section-9/border-middle.svg");
-            background-size: contain;
-            margin-top: -5px;
-            min-height: 70vh;
-
-            #content-container {
-                min-height: 70vh;
-                padding: 5%;
-
-                #content-goes-here {
-                    background-image: url(../img/section-9/smoke.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    margin: 0 5%;
-                    min-height: 70vh;
-
-                    @include md {
-                        display: grid;
-                        grid-template-columns: 80px auto auto auto auto 80px;
-                        grid-template-rows: 4;
-                        grid-template-areas:
-                            ". genad genad . . ."
+	display: grid;
+	grid-template-areas: ". section-9 .";
+	grid-template-columns: 15px auto 15px;
+	padding-bottom: 80px;
+	@include md {
+		padding-bottom: 100px;
+	}
+	@include xl {
+		grid-template-columns: auto 1200px auto;
+	}
+	>div {
+		grid-area: section-9;
+		#border-top {
+			position: relative;
+			h2 {
+				bottom: 0;
+				font-size: rem-calc(25);
+				left: 0;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				top: 50%;
+				@include md {
+					font-size: rem-calc(35);
+				}
+				@include lg {
+					font-size: rem-calc(48);
+				}
+			}
+			picture {
+				object-fit: cover;
+			}
+			img {
+				width: 100%;
+			}
+		}
+		#border-middle {
+			background-image: url("../img/section-9/border-middle.svg");
+			background-size: contain;
+			margin-top: -5px;
+			min-height: 70vh;
+			#content-container {
+				min-height: 70vh;
+				padding: 5%;
+				#content-goes-here {
+					background-image: url(../img/section-9/smoke.jpg);
+					background-position: center;
+					background-size: cover;
+					margin: 0 5%;
+					min-height: 70vh;
+					@include md {
+						display: grid;
+						grid-template-areas: ". genad genad . . ."
                             ". . taxiwork taxiwork taxiwork ."
                             ". insect insect . . ."
                             ". . owl owl owl .";
-
-                    }
-
-                    @include lg {
-                        grid-area: section-9;
-
-                    }
-
-                    @include xl {
-                        grid-template-columns: 20px auto auto auto 20px;
-                    }
-
-                    #general {
-                        padding-top: 30px;
-
-                        @include md {
-                            grid-area: genad;
-                            margin-bottom: 60px;
-                        }
-
-                        @include lg {
-                            padding-top: 100px;
-                        }
-
-                    }
-
-                    #taxidermy {
-                        @include md {
-                            grid-area: taxiwork;
-                            margin-bottom: 60px;
-                        }
-                    }
-
-                    #insect {
-
-                        @include md {
-                            grid-area: insect;
-                            margin-bottom: 60px;
-                        }
-                    }
-
-                    #owlpellet {
-                        padding-bottom: 30px;
-                        margin-bottom: 30px;
-
-                        @include md {
-                            grid-area: owl;
-
-
-                        }
-                    }
-                }
-            }
-        }
-
-        #border-bottom {
-            picture {
-                object-fit: cover;
-            }
-
-            img {
-                width: 100%;
-            }
-        }
-    }
+						grid-template-columns: 80px auto auto auto auto 80px;
+						grid-template-rows: 4;
+					}
+					@include lg {
+						grid-area: section-9;
+					}
+					@include xl {
+						grid-template-columns: 20px auto auto auto 20px;
+					}
+					#general {
+						padding-top: 30px;
+						@include md {
+							grid-area: genad;
+							margin-bottom: 60px;
+						}
+						@include lg {
+							padding-top: 100px;
+						}
+					}
+					#taxidermy {
+						@include md {
+							grid-area: taxiwork;
+							margin-bottom: 60px;
+						}
+					}
+					#insect {
+						@include md {
+							grid-area: insect;
+							margin-bottom: 60px;
+						}
+					}
+					#owlpellet {
+						margin-bottom: 30px;
+						padding-bottom: 30px;
+						@include md {
+							grid-area: owl;
+						}
+					}
+				}
+			}
+		}
+		#border-bottom {
+			picture {
+				object-fit: cover;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
 }

@@ -324,9 +324,7 @@ ul {
 
 .mobile-only {
   display: block !important; }
-  @media (min-width: 768px) {
-    .mobile-only {
-      display: none !important; } }
+
 .hide-for-mobile-and-tab {
   display: none; }
   @media (min-width: 992px) {
@@ -350,110 +348,110 @@ ul {
       display: none !important; } }
 .tag-header {
   background-color: #fffbcf;
-  text-align: center;
+  color: #000;
   font-size: 2rem;
   padding: 10px;
-  color: #000; }
+  text-align: center; }
 
 .mobile-charity.tablet-charity-left {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start; }
   .mobile-charity.tablet-charity-left > h3 {
-    width: 230px;
     font-size: 1.5rem;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    width: 230px; }
   .mobile-charity.tablet-charity-left > aside {
-    width: 250px;
-    height: 142px;
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 142px;
+    width: 250px; }
   .mobile-charity.tablet-charity-left > div {
     margin: 5% 77px; }
   @media (min-width: 768px) {
     .mobile-charity.tablet-charity-left {
-      margin-top: 84px;
       display: grid;
-      grid-template-columns: 35% 45% 20%; }
+      grid-template-columns: 35% 45% 20%;
+      margin-top: 84px; }
       .mobile-charity.tablet-charity-left > h3 {
-        height: 39px;
-        width: 444px;
         font-size: 2rem;
-        text-align: left;
-        z-index: 2;
+        height: 39px;
+        margin-left: 180px;
         margin-top: 30px;
-        margin-left: 180px; }
+        text-align: left;
+        width: 444px;
+        z-index: 2; }
       .mobile-charity.tablet-charity-left > article {
-        margin-top: 20%;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 1.25rem;
-        line-height: 1.5rem; }
+        margin-top: 20%; }
       .mobile-charity.tablet-charity-left > aside {
-        width: 100%;
+        background-position: -130px 0px;
         height: 35vh;
-        background-position: -130px 0px; }
+        width: 100%; }
       .mobile-charity.tablet-charity-left > div {
         margin-left: 0px;
         margin-right: 10px; } }
 .mobile-charity.tablet-charity-right {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start; }
   .mobile-charity.tablet-charity-right > h3 {
-    width: 230px;
     font-size: 1.5rem;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    width: 230px; }
   .mobile-charity.tablet-charity-right > aside {
-    width: 250px;
-    height: 142px;
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 142px;
+    width: 250px; }
   .mobile-charity.tablet-charity-right > div {
     margin: 5% 77px; }
   @media (min-width: 768px) {
     .mobile-charity.tablet-charity-right {
-      margin-top: 84px;
       display: grid;
-      grid-template-columns: 20% 45% 35%; }
+      grid-template-columns: 20% 45% 35%;
+      margin-top: 84px; }
       .mobile-charity.tablet-charity-right > h3 {
-        height: 39px;
-        width: 500px;
         font-size: 2rem;
-        text-align: right;
-        z-index: 2;
+        height: 39px;
         margin-bottom: 97%;
-        margin-left: -310px; }
+        margin-left: -310px;
+        text-align: right;
+        width: 500px;
+        z-index: 2; }
       .mobile-charity.tablet-charity-right > article {
-        margin-top: 20%;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         margin-left: 20px;
         margin-right: 20px;
-        font-size: 1.25rem;
-        line-height: 1.5rem; }
+        margin-top: 20%; }
       .mobile-charity.tablet-charity-right > aside {
-        width: 100%;
+        background-position: center;
         height: 35vh;
-        background-position: center; }
+        width: 100%; }
       .mobile-charity.tablet-charity-right > div {
         grid-area: more;
-        margin-right: 0px;
-        margin-left: 10px; } }
+        margin-left: 10px;
+        margin-right: 0px; } }
 .ticket-label {
-  text-align: center;
   background-color: #d9aa08;
   border-radius: 8px;
   font-size: 1.4375rem;
   margin: 30px 14px;
-  padding: 10px 5px; }
+  padding: 10px 5px;
+  text-align: center; }
   @media (min-width: 768px) {
     .ticket-label {
+      background-color: #560101;
       color: #fff;
       font-size: 1.25rem;
-      background-color: #560101;
-      white-space: nowrap;
-      length: inherit; } }
+      length: inherit;
+      white-space: nowrap; } }
 .ticket-text {
   color: #d9aa08;
   font-size: 1rem;
@@ -464,18 +462,18 @@ ul {
       font-size: 1.625rem;
       line-height: 1.75rem; } }
 .ticket-price {
-  text-align: center;
   color: #d9aa08;
   font-size: 1.625rem;
-  margin: 20px 0px 15px; }
+  margin: 20px 0px 15px;
+  text-align: center; }
   @media (min-width: 768px) {
     .ticket-price {
       margin: auto; } }
 @media (min-width: 768px) {
   .ticket-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "tag tag tag tag price" "desc desc desc desc desc"; }
+    grid-template-areas: "tag tag tag tag price" "desc desc desc desc desc";
+    grid-template-columns: repeat(5, 1fr); }
     .ticket-grid > h3 {
       grid-area: tag;
       margin: 0px 0px 20px 0px; }
@@ -511,38 +509,38 @@ h2 {
 ============= */
 .more {
   background-color: #d9aa08;
-  width: 96px;
-  height: 33px;
-  text-align: center;
-  padding-top: 12px;
+  border-radius: 2px;
   color: #000;
   font-style: italic;
-  border-radius: 2px; }
+  height: 33px;
+  padding-top: 12px;
+  text-align: center;
+  width: 96px; }
 
 .footer-button {
   background-color: #d9aa08;
   border-radius: 2px;
   color: #000;
+  font-size: 1.125rem;
   font-style: italic;
-  text-align: center;
-  padding: 10px 0px 0px;
-  width: 120px;
   height: 22px;
-  font-size: 1.125rem; }
+  padding: 10px 0px 0px;
+  text-align: center;
+  width: 120px; }
   @media (min-width: 768px) {
     .footer-button {
-      width: 150px;
       font-size: 1.25rem;
-      padding: 15px 0px 15px; } }
+      padding: 15px 0px 15px;
+      width: 150px; } }
   @media (min-width: 992px) {
     .footer-button {
-      padding: 10px 0px 0px;
-      width: 203px;
+      font-size: 1.5625rem;
       height: 40px;
-      font-size: 1.5625rem; } }
+      padding: 10px 0px 0px;
+      width: 203px; } }
   .footer-button > p {
-    padding: 0px;
-    margin: 0px; }
+    margin: 0px;
+    padding: 0px; }
 
 /* =============
     Forms
@@ -589,35 +587,77 @@ textarea {
     Header
 ============= */
 header {
-  background-color: #8E0e0e; }
+  background-color: #8E0e0e;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+  @media (min-width: 768px) {
+    header {
+      display: grid;
+      grid-template-areas: ". nav ." "title title title";
+      grid-template-columns: 20% auto 20%;
+      height: 15vh; } }
+  @media (min-width: 992px) {
+    header {
+      height: 10vh; } }
   header #nav-container {
-    margin-top: 0px;
-    font-style: italic;
     font-size: 1.125rem;
-    color: #fff;
+    font-style: italic;
+    margin-top: 0px;
     padding: 20px 30px 0px 30px; }
     @media (min-width: 768px) {
       header #nav-container {
         display: flex !important;
+        grid-area: nav;
         justify-content: space-between; } }
+    header #nav-container > li > a {
+      color: #fff;
+      text-decoration: none; }
+    header #nav-container > li a:link,
+    header #nav-container > li a:visited {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.25s; }
+    header #nav-container > li a:hover,
+    header #nav-container > li a:active {
+      color: #000; }
   header #mobile-title {
-    margin-top: 0px;
-    text-align: center;
-    color: #fff; }
-  header #menu-burger {
-    text-align: left;
-    margin-top: 0px;
-    font-size: 1.5rem;
     color: #fff;
-    padding: 10px 0px 0px 10px; }
+    font-size: 1.25rem;
+    margin-top: 0px;
+    text-align: center; }
+  header #menu-burger {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    padding: 10px 0px 0px 10px;
+    text-align: left; }
+    header #menu-burger i {
+      cursor: pointer; }
+    header #menu-burger a:link,
+    header #menu-burger a:visited {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.25s; }
+    header #menu-burger a:hover,
+    header #menu-burger a:active {
+      color: #000; }
   header #title {
     text-align: center; }
+    @media (min-width: 768px) {
+      header #title {
+        grid-area: title; } }
     header #title #top {
+      background-color: #8E0e0e;
+      color: #fff;
       margin-bottom: 0px;
-      color: #fff; }
+      margin-top: 0px; }
     header #title #bottom {
-      margin-top: 0px;
-      background-color: #fff; }
+      background-color: #fff;
+      margin-bottom: 0px;
+      margin-top: 0px; }
 
 /* =============
     Footer
@@ -625,50 +665,72 @@ header {
 footer {
   background-color: #8E0e0e;
   display: grid;
-  grid-template-columns: auto 1fr 1fr 1fr;
-  grid-template-areas: "logos eye-name eye-name eye-name" "logos info info buttons" "logos info info buttons"; }
+  grid-template-areas: "logos eye-name eye-name eye-name" "logos info info buttons" "logos info info buttons";
+  grid-template-columns: auto 1fr 1fr 1fr; }
   @media (min-width: 1200px) {
     footer {
-      grid-template-columns: auto 15% 1fr 1fr 1fr 20%;
-      grid-template-areas: "logos . eye-name eye-name eye-name ." "logos . info info buttons ." "logos . info info buttons ."; } }
+      grid-template-areas: "logos . eye-name eye-name eye-name ." "logos . info info buttons ." "logos . info info buttons .";
+      grid-template-columns: auto 15% 1fr 1fr 1fr 20%; } }
   footer #logos {
-    grid-area: logos;
-    width: 35px;
+    align-items: center;
+    background-color: #fffbcf;
     display: flex;
     flex-direction: column;
-    background-color: #fffbcf;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 0px;
     font-size: 1.5625rem;
-    margin: -100px 15px 15px; }
+    grid-area: logos;
+    justify-content: space-between;
+    margin: -100px 15px 15px;
+    padding: 22px 0px;
+    width: 35px; }
+    footer #logos > li > a {
+      color: #fff;
+      text-decoration: none; }
+    footer #logos > li a:link,
+    footer #logos > li a:visited {
+      color: #000;
+      text-decoration: none;
+      transition: 0.25s; }
+    footer #logos > li a:hover,
+    footer #logos > li a:active {
+      color: #8E0e0e; }
+    footer #logos > a {
+      color: #fff;
+      text-decoration: none; }
+    footer #logos a:link,
+    footer #logos a:visited {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.25s; }
+    footer #logos a:hover,
+    footer #logos a:active {
+      color: #000; }
     @media (min-width: 768px) {
       footer #logos {
         margin: -100px 50px 15px 15px; } }
   footer #eye-logo {
-    grid-area: eye-name;
     display: grid;
-    grid-template-columns: 25% 30% 10% auto;
-    grid-template-areas: "eye name name name" "eye tagline tagline ."; }
+    grid-area: eye-name;
+    grid-template-areas: "eye name name name" "eye tagline tagline .";
+    grid-template-columns: 25% 30% 10% auto; }
     @media (min-width: 768px) {
       footer #eye-logo {
         grid-template-columns: 15% 30% 10% auto; } }
     @media (min-width: 992px) {
       footer #eye-logo {
         grid-template-columns: 20% 30% 10% auto;
-        padding-top: 30px;
-        margin-left: 70px; } }
+        margin-left: 70px;
+        padding-top: 30px; } }
     footer #eye-logo > div {
-      grid-area: eye;
       background-image: url(../img/section-1/eye.png);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 100%; }
+      background-size: 100%;
+      grid-area: eye; }
     footer #eye-logo > h3 {
+      color: #fff;
       grid-area: name;
-      margin-top: 40px;
       margin-bottom: 0px;
-      color: #fff; }
+      margin-top: 40px; }
       @media (min-width: 768px) {
         footer #eye-logo > h3 {
           font-size: 1.5625rem; } }
@@ -676,10 +738,10 @@ footer {
         footer #eye-logo > h3 {
           font-size: 2.5rem; } }
     footer #eye-logo > p {
-      grid-area: tagline;
+      color: #fff;
       font-style: italic;
-      margin-top: 5px;
-      color: #fff; }
+      grid-area: tagline;
+      margin-top: 5px; }
       @media (min-width: 768px) {
         footer #eye-logo > p {
           font-size: 1.25rem; } }
@@ -689,10 +751,10 @@ footer {
   footer #info {
     grid-area: info; }
     footer #info h4 {
+      color: #fff;
       font-family: 'New Rocker', cursive;
-      margin: auto 0px 0px 0px;
       font-size: 0.875rem;
-      color: #fff; }
+      margin: auto 0px 0px 0px; }
       @media (min-width: 768px) {
         footer #info h4 {
           font-size: 1.25rem;
@@ -700,13 +762,13 @@ footer {
       @media (min-width: 992px) {
         footer #info h4 {
           font-size: 1.625rem;
-          margin-top: 30px;
-          margin-left: 50px; } }
+          margin-left: 50px;
+          margin-top: 30px; } }
     footer #info > p {
-      font-size: 0.875rem;
       color: #fff;
-      margin-top: 4px;
-      font-style: italic; }
+      font-size: 0.875rem;
+      font-style: italic;
+      margin-top: 4px; }
       @media (min-width: 768px) {
         footer #info > p {
           font-size: 1.125rem; } }
@@ -725,57 +787,60 @@ footer {
           margin-bottom: 30px; } }
 #section-1 {
   display: grid;
-  height: 40vh;
-  text-align: justify;
-  margin: 88px 10px;
   font-size: 1rem;
-  line-height: 1.25rem; }
+  height: 10vh;
+  line-height: 1.25rem;
+  margin: 50px 10px;
+  padding: 70px 0px 20px;
+  text-align: justify; }
   @media (min-width: 768px) {
     #section-1 {
-      grid-template-columns: auto 55% auto;
-      grid-template-areas: ". text .";
       background-image: url(../img/section-1/library.jpg);
-      background-size: cover;
       background-position: center;
-      height: 420px;
-      padding: 58px;
-      margin: 100px 0px;
+      background-size: cover;
       color: #fff;
+      font-style: italic;
       font-weight: 700;
-      font-style: italic; } }
+      grid-template-areas: ". text .";
+      grid-template-columns: auto 55% auto;
+      height: 420px;
+      margin: 300px 0px 80px;
+      padding: 58px; } }
   @media (min-width: 992px) {
     #section-1 {
       background-image: none;
       color: #000;
-      grid-template-columns: auto 55% auto;
-      grid-template-areas: "eye text pointer";
+      font-style: normal;
       gap: 10px;
-      margin: 120px 10px;
-      justify-content: center; } }
+      grid-template-areas: "eye text pointer";
+      grid-template-columns: auto 55% auto;
+      justify-content: center;
+      margin: 220px 10px 0px; } }
   @media (min-width: 1200px) {
     #section-1 {
-      grid-template-columns: auto 30% auto;
+      grid-gap: 20px;
       grid-template-areas: "eye text pointer";
+      grid-template-columns: auto 30% auto;
       margin: 120px;
-      grid-gap: 20px; } }
+      padding-top: 180px; } }
   #section-1 > article {
     grid-area: text; }
   #section-1 #eye {
-    grid-area: eye;
     background-image: url(../img/section-1/eye.png);
-    height: 170px;
-    width: 200px;
+    background-position: center;
     background-size: cover;
-    background-position: center; }
+    grid-area: eye;
+    height: 170px;
+    width: 200px; }
     @media (min-width: 1200px) {
       #section-1 #eye {
         height: 320px;
         width: 390px; } }
 #hand {
-  grid-area: pointer;
   background-image: url(../img/section-1/pointer.png);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  grid-area: pointer;
   height: 170px;
   width: 200px; }
   @media (min-width: 1200px) {
@@ -784,8 +849,8 @@ footer {
       width: 398px; } }
 #section-2 {
   background-image: url(../img/section-2/hero1.jpg);
-  background-size: cover;
   background-position: 0px 600px;
+  background-size: cover;
   height: 30vh; }
   @media (min-width: 992px) {
     #section-2 {
@@ -794,25 +859,24 @@ footer {
 @media (min-width: 1200px) {
   #section-3 {
     display: grid;
-    grid-template-columns: auto 1004px auto;
-    grid-template-areas: ". section-3-container ."; } }
+    grid-template-columns: auto 1004px auto; } }
 
 #section-3 #section-3-container {
   grid-area: section-3-container; }
   #section-3 #section-3-container > h2 {
-    text-align: center;
-    align-content: center; }
+    align-content: center;
+    text-align: center; }
     @media (min-width: 992px) {
       #section-3 #section-3-container > h2 {
         margin-top: 120px; } }
   #section-3 #section-3-container #address-grid {
     display: grid;
-    grid-template-columns: 45% auto;
-    grid-template-areas: "location location" "case time"; }
+    grid-template-areas: "location location" "case time";
+    grid-template-columns: 45% auto; }
     @media (min-width: 768px) {
       #section-3 #section-3-container #address-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "caseinfo time"; } }
+        grid-template-areas: "caseinfo time";
+        grid-template-columns: repeat(2, 1fr); } }
     @media (min-width: 992px) {
       #section-3 #section-3-container #address-grid {
         margin: 0px 50px; } }
@@ -820,63 +884,54 @@ footer {
       #section-3 #section-3-container #address-grid {
         margin: 85px 218px; } }
     #section-3 #section-3-container #address-grid #location {
-      grid-area: location;
-      text-align: center;
       background-color: #fffbcf;
-      padding-bottom: 36px; }
-      @media (min-width: 768px) {
-        #section-3 #section-3-container #address-grid #location {
-          padding-bottom: 0px;
-          padding-left: 20px;
-          text-align: left;
-          width: 400px;
-          margin-left: 70%;
-          margin-right: -400px;
-          margin-top: 22px; } }
-      #section-3 #section-3-container #address-grid #location > h4 {
-        font-style: italic;
-        font-size: 1.5rem;
-        padding-bottom: 22px;
-        padding-top: 28px;
-        margin: 0px; }
-        @media (min-width: 768px) {
-          #section-3 #section-3-container #address-grid #location > h4 {
-            padding-bottom: 18px;
-            padding-left: 20px;
-            font-size: 1.75rem; } }
-      #section-3 #section-3-container #address-grid #location > p {
-        text-align: left;
-        padding-left: 66px;
-        margin: 0px;
-        font-style: italic; }
-        @media (min-width: 768px) {
-          #section-3 #section-3-container #address-grid #location > p {
-            padding-left: 20px;
-            font-size: 1.125rem; } }
+      grid-area: location;
+      padding-bottom: 36px;
+      text-align: center; }
       @media (min-width: 768px) {
         #section-3 #section-3-container #address-grid #location {
           grid-area: caseinfo;
-          z-index: 2;
-          height: 140px; } }
+          height: 140px;
+          z-index: 2; } }
+      #section-3 #section-3-container #address-grid #location > h4 {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 0px;
+        padding-bottom: 22px;
+        padding-top: 28px; }
+        @media (min-width: 768px) {
+          #section-3 #section-3-container #address-grid #location > h4 {
+            font-size: 1.75rem;
+            padding-bottom: 18px;
+            padding-left: 20px; } }
+      #section-3 #section-3-container #address-grid #location > p {
+        font-style: italic;
+        margin: 0px;
+        padding-left: 66px;
+        text-align: left; }
+        @media (min-width: 768px) {
+          #section-3 #section-3-container #address-grid #location > p {
+            font-size: 1.125rem;
+            padding-left: 20px; } }
     #section-3 #section-3-container #address-grid #case-image {
       background-image: url(../img/section-3/case.jpg);
-      height: 30vh;
+      background-position: center;
       background-size: cover;
-      background-position: center; }
+      height: 30vh; }
       @media (min-width: 768px) {
         #section-3 #section-3-container #address-grid #case-image {
           grid-area: caseinfo;
           height: 30vh; } }
     #section-3 #section-3-container #address-grid #time {
       grid-area: time;
-      text-align: center;
-      padding-top: 33%; }
+      padding-top: 33%;
+      text-align: center; }
       @media (min-width: 768px) {
         #section-3 #section-3-container #address-grid #time {
           font-size: 1.3125rem;
           line-height: 0.9375rem;
-          padding-top: 50%;
           padding-left: 20px;
+          padding-top: 50%;
           text-align: left; } }
       @media (min-width: 992px) {
         #section-3 #section-3-container #address-grid #time {
@@ -884,14 +939,14 @@ footer {
   @media (min-width: 768px) {
     #section-3 #section-3-container #image-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 36px;
       grid-template-areas: "bunnies tag painting" ". . painting" "words words painting" ". . painting";
+      grid-template-columns: repeat(3, 1fr);
       margin-left: 10px;
-      margin-top: 85px;
-      grid-gap: 36px; } }
+      margin-top: 85px; } }
   @media (min-width: 992px) {
     #section-3 #section-3-container #image-grid {
-      margin: 85px 50px; } }
+      margin: 85px 50px 40px; } }
   @media (min-width: 1200px) {
     #section-3 #section-3-container #image-grid {
       margin: 85px 218px;
@@ -915,35 +970,36 @@ footer {
         font-size: 1.3125rem;
         line-height: 1.625rem; } }
   #section-3 #section-3-container #image-grid #bunnies-image {
-    grid-area: bunnies;
     background-image: url(../img/section-3/bunnies.jpg);
-    background-size: 100%;
     background-position: center;
+    background-size: 100%;
+    grid-area: bunnies;
     height: 15vh; }
   #section-3 #section-3-container #image-grid #tag-image {
-    grid-area: tag;
     background-image: url(../img/section-3/tag.jpg);
-    background-size: 100%;
     background-position: center;
+    background-size: 100%;
+    grid-area: tag;
     height: 15vh; }
   #section-3 #section-3-container #image-grid #painting-image {
     background-image: url(../img/section-3/painting.jpg);
     background-position: 0px 230px;
     background-size: cover;
     height: 20vh;
-    margin-top: 90px; }
+    margin-bottom: 40px;
+    margin-top: 50px; }
     @media (min-width: 768px) {
       #section-3 #section-3-container #image-grid #painting-image {
+        background-position: center;
         grid-area: painting;
-        margin-top: 0px;
         height: inherit;
-        background-position: center; } }
+        margin-top: 0px; } }
 #section-4 {
   background-image: url(../img/section-4/neon.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   height: 30vh;
-  margin-top: 120px; }
+  margin-top: 80px; }
   @media (min-width: 992px) {
     #section-4 {
       background-position: center;
@@ -951,48 +1007,49 @@ footer {
 @media (min-width: 992px) {
   #section-5 {
     display: grid;
-    grid-template-columns: 50px auto 50px;
-    grid-template-areas: ". section-5-container ."; } }
+    grid-template-columns: 50px auto 50px; } }
 
 @media (min-width: 1200px) {
   #section-5 {
     display: grid;
-    grid-template-columns: auto 1004px auto;
-    grid-template-areas: ". section-5-container ."; } }
+    grid-template-columns: auto 1004px auto; } }
 
 #section-5 #section-5-container {
   grid-area: section-5-container; }
   #section-5 #section-5-container > h2 {
-    text-align: center;
-    align-content: center; }
+    align-content: center;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #section-5 #section-5-container > h2 {
+        margin-top: 80px; } }
     @media (min-width: 992px) {
       #section-5 #section-5-container > h2 {
-        margin-top: 120px; } }
+        margin-top: 30px; } }
   #section-5 #section-5-container #attraction-grid #flea-market {
-    margin-bottom: 92px; }
+    margin-bottom: 50px; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #flea-market {
         display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-areas: " doll-words doll-tag"; } }
+        grid-template-areas: " doll-words doll-tag";
+        grid-template-columns: 60% 40%; } }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #flea-market > h3 {
         grid-area: doll-tag;
-        z-index: 2;
         height: 45px;
-        width: 444px;
+        margin: 20px -300px;
         text-align: left;
-        margin: 20px -300px; } }
+        width: 444px;
+        z-index: 2; } }
     #section-5 #section-5-container #attraction-grid #flea-market > p {
-      padding: 70px 10px;
       font-size: 1.125rem;
-      line-height: 1.375rem; }
+      line-height: 1.375rem;
+      padding: 30px 10px; }
       @media (min-width: 768px) {
         #section-5 #section-5-container #attraction-grid #flea-market > p {
-          grid-area: doll-words;
-          padding: 80px 10px 70px;
           font-size: 1.3125rem;
-          line-height: 1.625rem; } }
+          grid-area: doll-words;
+          line-height: 1.625rem;
+          padding: 80px 10px 70px; } }
       @media (min-width: 992px) {
         #section-5 #section-5-container #attraction-grid #flea-market > p {
           font-size: 1.5rem;
@@ -1008,19 +1065,19 @@ footer {
   @media (min-width: 768px) {
     #section-5 #section-5-container #attraction-grid #odducation {
       display: grid;
-      grid-template-columns: 40% 60%;
       grid-template-areas: " books-tag books-words";
+      grid-template-columns: 40% 60%;
       margin-bottom: 92px; } }
   #section-5 #section-5-container #attraction-grid #odducation > p {
-    padding: 70px 10px;
     font-size: 1.125rem;
-    line-height: 1.375rem; }
+    line-height: 1.375rem;
+    padding: 35px 10px; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #odducation > p {
-        grid-area: books-words;
-        padding: 80px 10px 70px;
         font-size: 1.3125rem;
-        line-height: 1.625rem; } }
+        grid-area: books-words;
+        line-height: 1.625rem;
+        padding: 80px 10px 70px; } }
     @media (min-width: 992px) {
       #section-5 #section-5-container #attraction-grid #odducation > p {
         font-size: 1.5rem;
@@ -1028,11 +1085,11 @@ footer {
   @media (min-width: 768px) {
     #section-5 #section-5-container #attraction-grid #odducation > h3 {
       grid-area: books-tag;
-      z-index: 2;
       height: 45px;
-      width: 444px;
+      margin: 20px 100px;
       text-align: right;
-      margin: 20px 100px; } }
+      width: 444px;
+      z-index: 2; } }
   #section-5 #section-5-container #attraction-grid #odducation > aside {
     background-image: url(../img/section-5/books.jpg);
     background-position: center;
@@ -1044,18 +1101,18 @@ footer {
   @media (min-width: 768px) {
     #section-5 #section-5-container #attraction-grid #tattoo-parlour {
       display: grid;
-      grid-template-columns: 60% 40%;
-      grid-template-areas: " tattoo-words tattoo-tag"; } }
+      grid-template-areas: " tattoo-words tattoo-tag";
+      grid-template-columns: 60% 40%; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > h3 {
     margin: 0px; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > h3 {
         grid-area: tattoo-tag;
-        z-index: 2;
         height: 45px;
-        width: 444px;
+        margin: 20px -300px;
         text-align: left;
-        margin: 20px -300px; } }
+        width: 444px;
+        z-index: 2; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > aside {
     background-image: url(../img/section-5/tattoo.jpg);
     background-position: center;
@@ -1065,51 +1122,55 @@ footer {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > aside {
         grid-area: tattoo-tag; } }
   #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
-    padding: 70px 10px;
     font-size: 1.125rem;
-    line-height: 1.375rem; }
+    line-height: 1.375rem;
+    padding: 50px 10px; }
     @media (min-width: 768px) {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
-        grid-area: tattoo-words;
-        padding: 80px 10px 70px;
         font-size: 1.3125rem;
-        line-height: 1.625rem; } }
+        grid-area: tattoo-words;
+        line-height: 1.625rem;
+        padding: 80px 10px 70px; } }
     @media (min-width: 992px) {
       #section-5 #section-5-container #attraction-grid #tattoo-parlour > p {
         font-size: 1.5rem;
         line-height: 1.75rem; } }
 #section-6 {
   background-image: url(../img/section-6/hero3.jpg);
-  background-size: cover;
   background-position: 0px -200px;
+  background-size: cover;
   height: 30vh;
-  margin-top: 120px; }
+  margin-top: 80px; }
   @media (min-width: 992px) {
     #section-6 {
       background-position: 0px -250px;
       height: 40vh; } }
   @media (min-width: 1200px) {
     #section-6 {
-      background-position: 0px -450px; } }
+      background-position: 0px -550px;
+      height: 50vh; } }
 #section-7 {
   background-color: #646b07;
   color: #fff;
   margin-bottom: 50px; }
   @media (min-width: 992px) {
     #section-7 {
-      margin-top: 0px;
       display: grid;
       grid-template-columns: 100px auto 100px;
-      grid-template-areas: ". section-7-container ."; } }
+      margin-bottom: 0px;
+      margin-top: 0px; } }
   @media (min-width: 1200px) {
     #section-7 {
       display: block; } }
   #section-7 #section-7-container {
     grid-area: section-7-container; }
     #section-7 #section-7-container > h2 {
-      padding-top: 88px;
       margin-top: 0px;
+      padding-top: 30px;
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-7 #section-7-container > h2 {
+          padding-top: 80px; } }
     #section-7 #section-7-container > p {
       margin: 0px 10px; }
       @media (min-width: 768px) {
@@ -1123,8 +1184,8 @@ footer {
         grid-template-areas: "dogtag words words" ". words words" ". . more"; } }
     @media (min-width: 1200px) {
       #section-7 #section-7-container #pitbulls {
-        grid-template-columns: 55% auto;
-        grid-template-areas: "dogtag words" "dogtag more"; } }
+        grid-template-areas: "dogtag words" "dogtag more";
+        grid-template-columns: 55% auto; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #pitbulls > h3 {
         grid-area: dogtag; } }
@@ -1159,8 +1220,8 @@ footer {
           grid-template-areas: " words words owltag" "words words ." ". . more"; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #pmwc {
-          grid-template-columns: 65% 35%;
-          grid-template-areas: "words owltag" "more owltag"; } }
+          grid-template-areas: "words owltag" "more owltag";
+          grid-template-columns: 65% 35%; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #pmwc > h3 {
           grid-area: owltag; } }
@@ -1195,8 +1256,8 @@ footer {
         grid-template-areas: "butterflytag words words" ". words words" ". . more"; } }
     @media (min-width: 1200px) {
       #section-7 #section-7-container #opmonarch {
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "butterflytag words" "butterflytag more"; } }
+        grid-template-areas: "butterflytag words" "butterflytag more";
+        grid-template-columns: 50% 50%; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #opmonarch > h3 {
         grid-area: butterflytag; } }
@@ -1230,8 +1291,8 @@ footer {
         #section-7 #section-7-container #mutter {
           grid-template-areas: " words words skulltag" "words words ." ". quote more"; }
           #section-7 #section-7-container #mutter #pullquote {
-            grid-area: quote;
             font-size: 1.75rem;
+            grid-area: quote;
             line-height: 1.875rem; } }
     @media (min-width: 768px) and (min-width: 992px) {
       #section-7 #section-7-container #mutter #pullquote {
@@ -1243,8 +1304,8 @@ footer {
         margin-top: 0px; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter {
-          grid-template-columns: 65% 35%;
-          grid-template-areas: "words skulltag" "more skulltag" "quote skulltag"; } }
+          grid-template-areas: "words skulltag" "more skulltag" "quote skulltag";
+          grid-template-columns: 65% 35%; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #mutter > h3 {
           grid-area: skulltag;
@@ -1255,44 +1316,46 @@ footer {
           margin-bottom: 200%; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter > h3 {
-          margin-left: -400px; } }
+          margin-bottom: auto;
+          margin-left: -400px;
+          margin-top: 30px; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #mutter > article {
           grid-area: words;
-          margin-top: 0px;
-          margin-bottom: 30%; } }
+          margin-bottom: 30%;
+          margin-top: 0px; } }
       @media (min-width: 992px) {
         #section-7 #section-7-container #mutter > article {
           margin-bottom: 50%; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter > article {
-          margin-left: 50%;
           margin-bottom: 0px;
+          margin-left: 50%;
           padding-top: 100px; } }
       #section-7 #section-7-container #mutter > aside {
         background-image: url(../img/section-7/skull-and-preserve.jpg);
         background-position: 0 -70px; }
         @media (min-width: 768px) {
           #section-7 #section-7-container #mutter > aside {
-            grid-area: skulltag;
             background-position: 0 -70px;
+            grid-area: skulltag;
             height: 50vh; } }
         @media (min-width: 1200px) {
           #section-7 #section-7-container #mutter > aside {
-            height: 80vh; } }
+            height: 1200px; } }
       @media (min-width: 768px) {
         #section-7 #section-7-container #mutter > div {
-          grid-area: more;
+          align-items: center;
           display: flex;
+          grid-area: more;
           height: 100%;
           justify-content: center;
-          align-items: center;
           margin-left: 0px;
           margin-right: 10px; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #mutter > div {
-          justify-content: flex-end;
           align-items: flex-end;
+          justify-content: flex-end;
           margin-right: 30px; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #als {
@@ -1302,8 +1365,8 @@ footer {
         padding-bottom: 84px; } }
     @media (min-width: 1200px) {
       #section-7 #section-7-container #als {
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "handstag words" "handstag more"; } }
+        grid-template-areas: "handstag words" "handstag more";
+        grid-template-columns: 50% 50%; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #als > h3 {
         grid-area: handstag; } }
@@ -1324,8 +1387,8 @@ footer {
           grid-area: handstag; } }
       @media (min-width: 1200px) {
         #section-7 #section-7-container #als > aside {
-          height: 100%;
-          background-position: center; } }
+          background-position: center;
+          height: 100%; } }
     @media (min-width: 768px) {
       #section-7 #section-7-container #als > div {
         grid-area: more; } }
@@ -1334,9 +1397,9 @@ footer {
         margin-left: 60%; } }
 #section-8 {
   background-image: url(../img/section-8/hero4.jpg);
-  background-size: cover;
   background-position: 0px -200px;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 30vh;
   margin-top: 0px; }
   @media (min-width: 1200px) {
@@ -1369,9 +1432,9 @@ footer {
         @media (min-width: 768px) {
           #section-9 > div #border-top h2 {
             font-size: 2.1875rem; } }
-        @media (min-width: 1200px) {
+        @media (min-width: 992px) {
           #section-9 > div #border-top h2 {
-            font-size: 2.8125rem; } }
+            font-size: 3rem; } }
       #section-9 > div #border-top picture {
         object-fit: cover; }
       #section-9 > div #border-top img {
@@ -1393,9 +1456,9 @@ footer {
           @media (min-width: 768px) {
             #section-9 > div #border-middle #content-container #content-goes-here {
               display: grid;
+              grid-template-areas: ". genad genad . . ." ". . taxiwork taxiwork taxiwork ." ". insect insect . . ." ". . owl owl owl .";
               grid-template-columns: 80px auto auto auto auto 80px;
-              grid-template-rows: 4;
-              grid-template-areas: ". genad genad . . ." ". . taxiwork taxiwork taxiwork ." ". insect insect . . ." ". . owl owl owl ."; } }
+              grid-template-rows: 4; } }
           @media (min-width: 992px) {
             #section-9 > div #border-middle #content-container #content-goes-here {
               grid-area: section-9; } }
@@ -1420,8 +1483,8 @@ footer {
               grid-area: insect;
               margin-bottom: 60px; } }
           #section-9 > div #border-middle #content-container #content-goes-here #owlpellet {
-            padding-bottom: 30px;
-            margin-bottom: 30px; }
+            margin-bottom: 30px;
+            padding-bottom: 30px; }
             @media (min-width: 768px) {
               #section-9 > div #border-middle #content-container #content-goes-here #owlpellet {
                 grid-area: owl; } }
