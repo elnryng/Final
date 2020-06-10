@@ -816,13 +816,13 @@ footer {
       grid-template-columns: auto 55% auto;
       grid-template-areas: "eye text pointer";
       gap: 10px;
-      margin: 220px 10px 0px;
+      margin: 160px 10px 0px;
       justify-content: center; } }
   @media (min-width: 1200px) {
     #section-1 {
       grid-template-columns: auto 30% auto;
       grid-template-areas: "eye text pointer";
-      margin: 120px;
+      margin: 120px 120px 200px;
       padding-top: 180px;
       grid-gap: 20px; } }
   #section-1 > article {
